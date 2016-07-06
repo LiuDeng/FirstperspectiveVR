@@ -1,0 +1,755 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D990D7A7FEC335B15EA4F92 /* libPods-FirstperspectiveVRUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C2A7C8C5B4052504B203D9B /* libPods-FirstperspectiveVRUITests.a */; };
+		61C52B42AB094425313D03A6 /* libPods-FirstperspectiveVR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD4F975CD5F07468F1734407 /* libPods-FirstperspectiveVR.a */; };
+		CCE692C81D25F77600AE5171 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE692C71D25F77600AE5171 /* main.m */; };
+		CCE692CB1D25F77600AE5171 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE692CA1D25F77600AE5171 /* AppDelegate.m */; };
+		CCE692D11D25F77600AE5171 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCE692CF1D25F77600AE5171 /* Main.storyboard */; };
+		CCE692D31D25F77600AE5171 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCE692D21D25F77600AE5171 /* Assets.xcassets */; };
+		CCE692D61D25F77600AE5171 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCE692D41D25F77600AE5171 /* LaunchScreen.storyboard */; };
+		CCE692E11D25F77600AE5171 /* FirstperspectiveVRTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE692E01D25F77600AE5171 /* FirstperspectiveVRTests.m */; };
+		CCE692EC1D25F77600AE5171 /* FirstperspectiveVRUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE692EB1D25F77600AE5171 /* FirstperspectiveVRUITests.m */; };
+		CCE693021D25FD3A00AE5171 /* MainTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE693011D25FD3A00AE5171 /* MainTabBarVC.m */; };
+		CCE693071D2600F100AE5171 /* LocalTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE693061D2600F100AE5171 /* LocalTableVC.m */; };
+		ED47E5939287F40259172CE7 /* libPods-FirstperspectiveVRTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30FFC74399986E4753FB7B8E /* libPods-FirstperspectiveVRTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CCE692DD1D25F77600AE5171 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCE692BB1D25F77600AE5171 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCE692C21D25F77600AE5171;
+			remoteInfo = FirstperspectiveVR;
+		};
+		CCE692E81D25F77600AE5171 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCE692BB1D25F77600AE5171 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCE692C21D25F77600AE5171;
+			remoteInfo = FirstperspectiveVR;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		159E85566B67C62091D28098 /* Pods-FirstperspectiveVRTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstperspectiveVRTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirstperspectiveVRTests/Pods-FirstperspectiveVRTests.debug.xcconfig"; sourceTree = "<group>"; };
+		30FFC74399986E4753FB7B8E /* libPods-FirstperspectiveVRTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FirstperspectiveVRTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		48521F8C2CD0B64AB194B88E /* Pods-FirstperspectiveVR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstperspectiveVR.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirstperspectiveVR/Pods-FirstperspectiveVR.release.xcconfig"; sourceTree = "<group>"; };
+		7837D5B8E3611A1029EBEA1A /* Pods-FirstperspectiveVRTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstperspectiveVRTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirstperspectiveVRTests/Pods-FirstperspectiveVRTests.release.xcconfig"; sourceTree = "<group>"; };
+		7C2A7C8C5B4052504B203D9B /* libPods-FirstperspectiveVRUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FirstperspectiveVRUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B33D76DFBAFB8A787381390 /* Pods-FirstperspectiveVRUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstperspectiveVRUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirstperspectiveVRUITests/Pods-FirstperspectiveVRUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9F71712C93753A336648DA3C /* Pods-FirstperspectiveVR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstperspectiveVR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirstperspectiveVR/Pods-FirstperspectiveVR.debug.xcconfig"; sourceTree = "<group>"; };
+		C78CA5281C5465002AE12E96 /* Pods-FirstperspectiveVRUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstperspectiveVRUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirstperspectiveVRUITests/Pods-FirstperspectiveVRUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CCE692C31D25F77600AE5171 /* FirstperspectiveVR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstperspectiveVR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCE692C71D25F77600AE5171 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CCE692C91D25F77600AE5171 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CCE692CA1D25F77600AE5171 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CCE692D01D25F77600AE5171 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CCE692D21D25F77600AE5171 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CCE692D51D25F77600AE5171 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CCE692D71D25F77600AE5171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCE692DC1D25F77600AE5171 /* FirstperspectiveVRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstperspectiveVRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCE692E01D25F77600AE5171 /* FirstperspectiveVRTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstperspectiveVRTests.m; sourceTree = "<group>"; };
+		CCE692E21D25F77600AE5171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCE692E71D25F77600AE5171 /* FirstperspectiveVRUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstperspectiveVRUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCE692EB1D25F77600AE5171 /* FirstperspectiveVRUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstperspectiveVRUITests.m; sourceTree = "<group>"; };
+		CCE692ED1D25F77600AE5171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCE693001D25FD3A00AE5171 /* MainTabBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarVC.h; sourceTree = "<group>"; };
+		CCE693011D25FD3A00AE5171 /* MainTabBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarVC.m; sourceTree = "<group>"; };
+		CCE693051D2600F100AE5171 /* LocalTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalTableVC.h; sourceTree = "<group>"; };
+		CCE693061D2600F100AE5171 /* LocalTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalTableVC.m; sourceTree = "<group>"; };
+		FD4F975CD5F07468F1734407 /* libPods-FirstperspectiveVR.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FirstperspectiveVR.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CCE692C01D25F77600AE5171 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61C52B42AB094425313D03A6 /* libPods-FirstperspectiveVR.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCE692D91D25F77600AE5171 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED47E5939287F40259172CE7 /* libPods-FirstperspectiveVRTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCE692E41D25F77600AE5171 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D990D7A7FEC335B15EA4F92 /* libPods-FirstperspectiveVRUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7FC9A380E85BA33D09BCE57B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9F71712C93753A336648DA3C /* Pods-FirstperspectiveVR.debug.xcconfig */,
+				48521F8C2CD0B64AB194B88E /* Pods-FirstperspectiveVR.release.xcconfig */,
+				159E85566B67C62091D28098 /* Pods-FirstperspectiveVRTests.debug.xcconfig */,
+				7837D5B8E3611A1029EBEA1A /* Pods-FirstperspectiveVRTests.release.xcconfig */,
+				C78CA5281C5465002AE12E96 /* Pods-FirstperspectiveVRUITests.debug.xcconfig */,
+				9B33D76DFBAFB8A787381390 /* Pods-FirstperspectiveVRUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CCE692BA1D25F77600AE5171 = {
+			isa = PBXGroup;
+			children = (
+				CCE692C51D25F77600AE5171 /* FirstperspectiveVR */,
+				CCE692DF1D25F77600AE5171 /* FirstperspectiveVRTests */,
+				CCE692EA1D25F77600AE5171 /* FirstperspectiveVRUITests */,
+				CCE692C41D25F77600AE5171 /* Products */,
+				7FC9A380E85BA33D09BCE57B /* Pods */,
+				CE02D04DCC49DA99BFC0B034 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CCE692C41D25F77600AE5171 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCE692C31D25F77600AE5171 /* FirstperspectiveVR.app */,
+				CCE692DC1D25F77600AE5171 /* FirstperspectiveVRTests.xctest */,
+				CCE692E71D25F77600AE5171 /* FirstperspectiveVRUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCE692C51D25F77600AE5171 /* FirstperspectiveVR */ = {
+			isa = PBXGroup;
+			children = (
+				CCE692FB1D25F87B00AE5171 /* M */,
+				CCE692FA1D25F87100AE5171 /* V */,
+				CCE692F91D25F86900AE5171 /* C */,
+				CCE692C61D25F77600AE5171 /* Supporting Files */,
+			);
+			path = FirstperspectiveVR;
+			sourceTree = "<group>";
+		};
+		CCE692C61D25F77600AE5171 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CCE692D41D25F77600AE5171 /* LaunchScreen.storyboard */,
+				CCE692C91D25F77600AE5171 /* AppDelegate.h */,
+				CCE692CA1D25F77600AE5171 /* AppDelegate.m */,
+				CCE692D21D25F77600AE5171 /* Assets.xcassets */,
+				CCE692D71D25F77600AE5171 /* Info.plist */,
+				CCE692C71D25F77600AE5171 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CCE692DF1D25F77600AE5171 /* FirstperspectiveVRTests */ = {
+			isa = PBXGroup;
+			children = (
+				CCE692E01D25F77600AE5171 /* FirstperspectiveVRTests.m */,
+				CCE692E21D25F77600AE5171 /* Info.plist */,
+			);
+			path = FirstperspectiveVRTests;
+			sourceTree = "<group>";
+		};
+		CCE692EA1D25F77600AE5171 /* FirstperspectiveVRUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CCE692EB1D25F77600AE5171 /* FirstperspectiveVRUITests.m */,
+				CCE692ED1D25F77600AE5171 /* Info.plist */,
+			);
+			path = FirstperspectiveVRUITests;
+			sourceTree = "<group>";
+		};
+		CCE692F91D25F86900AE5171 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				CCE692FC1D25FCEF00AE5171 /* Recommend */,
+				CCE693031D26006E00AE5171 /* Channel */,
+				CCE693041D26009400AE5171 /* Local */,
+				CCE693001D25FD3A00AE5171 /* MainTabBarVC.h */,
+				CCE693011D25FD3A00AE5171 /* MainTabBarVC.m */,
+			);
+			name = C;
+			sourceTree = "<group>";
+		};
+		CCE692FA1D25F87100AE5171 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				CCE692CF1D25F77600AE5171 /* Main.storyboard */,
+			);
+			name = V;
+			sourceTree = "<group>";
+		};
+		CCE692FB1D25F87B00AE5171 /* M */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = M;
+			sourceTree = "<group>";
+		};
+		CCE692FC1D25FCEF00AE5171 /* Recommend */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Recommend;
+			sourceTree = "<group>";
+		};
+		CCE693031D26006E00AE5171 /* Channel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Channel;
+			sourceTree = "<group>";
+		};
+		CCE693041D26009400AE5171 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				CCE693051D2600F100AE5171 /* LocalTableVC.h */,
+				CCE693061D2600F100AE5171 /* LocalTableVC.m */,
+			);
+			name = Local;
+			sourceTree = "<group>";
+		};
+		CE02D04DCC49DA99BFC0B034 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD4F975CD5F07468F1734407 /* libPods-FirstperspectiveVR.a */,
+				30FFC74399986E4753FB7B8E /* libPods-FirstperspectiveVRTests.a */,
+				7C2A7C8C5B4052504B203D9B /* libPods-FirstperspectiveVRUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CCE692C21D25F77600AE5171 /* FirstperspectiveVR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCE692F01D25F77600AE5171 /* Build configuration list for PBXNativeTarget "FirstperspectiveVR" */;
+			buildPhases = (
+				813B88788F818ED2AF922A55 /* [CP] Check Pods Manifest.lock */,
+				CCE692BF1D25F77600AE5171 /* Sources */,
+				CCE692C01D25F77600AE5171 /* Frameworks */,
+				CCE692C11D25F77600AE5171 /* Resources */,
+				41861BC05E7022326FD168F4 /* [CP] Embed Pods Frameworks */,
+				8B1228AA6237B92B89924BA0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FirstperspectiveVR;
+			productName = FirstperspectiveVR;
+			productReference = CCE692C31D25F77600AE5171 /* FirstperspectiveVR.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CCE692DB1D25F77600AE5171 /* FirstperspectiveVRTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCE692F31D25F77600AE5171 /* Build configuration list for PBXNativeTarget "FirstperspectiveVRTests" */;
+			buildPhases = (
+				B385A46128B0E65F2F1FE9C9 /* [CP] Check Pods Manifest.lock */,
+				CCE692D81D25F77600AE5171 /* Sources */,
+				CCE692D91D25F77600AE5171 /* Frameworks */,
+				CCE692DA1D25F77600AE5171 /* Resources */,
+				412EC3EF374F8C680C49F6EE /* [CP] Embed Pods Frameworks */,
+				1232C09D2D57B74F832DE632 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCE692DE1D25F77600AE5171 /* PBXTargetDependency */,
+			);
+			name = FirstperspectiveVRTests;
+			productName = FirstperspectiveVRTests;
+			productReference = CCE692DC1D25F77600AE5171 /* FirstperspectiveVRTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CCE692E61D25F77600AE5171 /* FirstperspectiveVRUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCE692F61D25F77600AE5171 /* Build configuration list for PBXNativeTarget "FirstperspectiveVRUITests" */;
+			buildPhases = (
+				11F255F670F9A2533E08124C /* [CP] Check Pods Manifest.lock */,
+				CCE692E31D25F77600AE5171 /* Sources */,
+				CCE692E41D25F77600AE5171 /* Frameworks */,
+				CCE692E51D25F77600AE5171 /* Resources */,
+				1DF9B250C06FC23621CDC452 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCE692E91D25F77600AE5171 /* PBXTargetDependency */,
+			);
+			name = FirstperspectiveVRUITests;
+			productName = FirstperspectiveVRUITests;
+			productReference = CCE692E71D25F77600AE5171 /* FirstperspectiveVRUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CCE692BB1D25F77600AE5171 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = qingyun;
+				TargetAttributes = {
+					CCE692C21D25F77600AE5171 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					CCE692DB1D25F77600AE5171 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = CCE692C21D25F77600AE5171;
+					};
+					CCE692E61D25F77600AE5171 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = CCE692C21D25F77600AE5171;
+					};
+				};
+			};
+			buildConfigurationList = CCE692BE1D25F77600AE5171 /* Build configuration list for PBXProject "FirstperspectiveVR" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CCE692BA1D25F77600AE5171;
+			productRefGroup = CCE692C41D25F77600AE5171 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CCE692C21D25F77600AE5171 /* FirstperspectiveVR */,
+				CCE692DB1D25F77600AE5171 /* FirstperspectiveVRTests */,
+				CCE692E61D25F77600AE5171 /* FirstperspectiveVRUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CCE692C11D25F77600AE5171 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCE692D61D25F77600AE5171 /* LaunchScreen.storyboard in Resources */,
+				CCE692D31D25F77600AE5171 /* Assets.xcassets in Resources */,
+				CCE692D11D25F77600AE5171 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCE692DA1D25F77600AE5171 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCE692E51D25F77600AE5171 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11F255F670F9A2533E08124C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1232C09D2D57B74F832DE632 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FirstperspectiveVRTests/Pods-FirstperspectiveVRTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1DF9B250C06FC23621CDC452 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FirstperspectiveVRUITests/Pods-FirstperspectiveVRUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		412EC3EF374F8C680C49F6EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FirstperspectiveVRTests/Pods-FirstperspectiveVRTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41861BC05E7022326FD168F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FirstperspectiveVR/Pods-FirstperspectiveVR-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		813B88788F818ED2AF922A55 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8B1228AA6237B92B89924BA0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FirstperspectiveVR/Pods-FirstperspectiveVR-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B385A46128B0E65F2F1FE9C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CCE692BF1D25F77600AE5171 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCE692CB1D25F77600AE5171 /* AppDelegate.m in Sources */,
+				CCE693071D2600F100AE5171 /* LocalTableVC.m in Sources */,
+				CCE692C81D25F77600AE5171 /* main.m in Sources */,
+				CCE693021D25FD3A00AE5171 /* MainTabBarVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCE692D81D25F77600AE5171 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCE692E11D25F77600AE5171 /* FirstperspectiveVRTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCE692E31D25F77600AE5171 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCE692EC1D25F77600AE5171 /* FirstperspectiveVRUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CCE692DE1D25F77600AE5171 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCE692C21D25F77600AE5171 /* FirstperspectiveVR */;
+			targetProxy = CCE692DD1D25F77600AE5171 /* PBXContainerItemProxy */;
+		};
+		CCE692E91D25F77600AE5171 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCE692C21D25F77600AE5171 /* FirstperspectiveVR */;
+			targetProxy = CCE692E81D25F77600AE5171 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CCE692CF1D25F77600AE5171 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCE692D01D25F77600AE5171 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CCE692D41D25F77600AE5171 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCE692D51D25F77600AE5171 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CCE692EE1D25F77600AE5171 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CCE692EF1D25F77600AE5171 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CCE692F11D25F77600AE5171 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F71712C93753A336648DA3C /* Pods-FirstperspectiveVR.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FirstperspectiveVR/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.firstperspectiveVR.www.FirstperspectiveVR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CCE692F21D25F77600AE5171 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48521F8C2CD0B64AB194B88E /* Pods-FirstperspectiveVR.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FirstperspectiveVR/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.firstperspectiveVR.www.FirstperspectiveVR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CCE692F41D25F77600AE5171 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 159E85566B67C62091D28098 /* Pods-FirstperspectiveVRTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FirstperspectiveVRTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.firstperspectiveVR.www.FirstperspectiveVRTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FirstperspectiveVR.app/FirstperspectiveVR";
+			};
+			name = Debug;
+		};
+		CCE692F51D25F77600AE5171 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7837D5B8E3611A1029EBEA1A /* Pods-FirstperspectiveVRTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FirstperspectiveVRTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.firstperspectiveVR.www.FirstperspectiveVRTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FirstperspectiveVR.app/FirstperspectiveVR";
+			};
+			name = Release;
+		};
+		CCE692F71D25F77600AE5171 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C78CA5281C5465002AE12E96 /* Pods-FirstperspectiveVRUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = FirstperspectiveVRUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.firstperspectiveVR.www.FirstperspectiveVRUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FirstperspectiveVR;
+			};
+			name = Debug;
+		};
+		CCE692F81D25F77600AE5171 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B33D76DFBAFB8A787381390 /* Pods-FirstperspectiveVRUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = FirstperspectiveVRUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.firstperspectiveVR.www.FirstperspectiveVRUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FirstperspectiveVR;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CCE692BE1D25F77600AE5171 /* Build configuration list for PBXProject "FirstperspectiveVR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCE692EE1D25F77600AE5171 /* Debug */,
+				CCE692EF1D25F77600AE5171 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCE692F01D25F77600AE5171 /* Build configuration list for PBXNativeTarget "FirstperspectiveVR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCE692F11D25F77600AE5171 /* Debug */,
+				CCE692F21D25F77600AE5171 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCE692F31D25F77600AE5171 /* Build configuration list for PBXNativeTarget "FirstperspectiveVRTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCE692F41D25F77600AE5171 /* Debug */,
+				CCE692F51D25F77600AE5171 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCE692F61D25F77600AE5171 /* Build configuration list for PBXNativeTarget "FirstperspectiveVRUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCE692F71D25F77600AE5171 /* Debug */,
+				CCE692F81D25F77600AE5171 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CCE692BB1D25F77600AE5171 /* Project object */;
+}
