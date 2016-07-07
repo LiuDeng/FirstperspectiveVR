@@ -18,6 +18,12 @@
 		CCE692EC1D25F77600AE5171 /* FirstperspectiveVRUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE692EB1D25F77600AE5171 /* FirstperspectiveVRUITests.m */; };
 		CCE693021D25FD3A00AE5171 /* MainTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE693011D25FD3A00AE5171 /* MainTabBarVC.m */; };
 		CCE693071D2600F100AE5171 /* LocalTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE693061D2600F100AE5171 /* LocalTableVC.m */; };
+		CCF8A34A1D2D262700255967 /* RecommenModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF8A3491D2D262700255967 /* RecommenModel.m */; };
+		CCF8A34D1D2D29B600255967 /* RecommenModel2.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF8A34C1D2D29B600255967 /* RecommenModel2.m */; };
+		CCF8A3501D2D317B00255967 /* RecommenModel3.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF8A34F1D2D317B00255967 /* RecommenModel3.m */; };
+		CCF8A3921D2E7D9D00255967 /* Main2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCF8A3911D2E7D9D00255967 /* Main2.storyboard */; };
+		CCF8A3971D2E808100255967 /* FGTableViewCell1.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF8A3951D2E808100255967 /* FGTableViewCell1.m */; };
+		CCF8A3981D2E808100255967 /* FGTableViewCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCF8A3961D2E808100255967 /* FGTableViewCell1.xib */; };
 		ED47E5939287F40259172CE7 /* libPods-FirstperspectiveVRTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30FFC74399986E4753FB7B8E /* libPods-FirstperspectiveVRTests.a */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +71,17 @@
 		CCE693011D25FD3A00AE5171 /* MainTabBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarVC.m; sourceTree = "<group>"; };
 		CCE693051D2600F100AE5171 /* LocalTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalTableVC.h; sourceTree = "<group>"; };
 		CCE693061D2600F100AE5171 /* LocalTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalTableVC.m; sourceTree = "<group>"; };
+		CCF8A3481D2D262700255967 /* RecommenModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommenModel.h; sourceTree = "<group>"; };
+		CCF8A3491D2D262700255967 /* RecommenModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommenModel.m; sourceTree = "<group>"; };
+		CCF8A34B1D2D29B600255967 /* RecommenModel2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommenModel2.h; sourceTree = "<group>"; };
+		CCF8A34C1D2D29B600255967 /* RecommenModel2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommenModel2.m; sourceTree = "<group>"; };
+		CCF8A34E1D2D317B00255967 /* RecommenModel3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommenModel3.h; sourceTree = "<group>"; };
+		CCF8A34F1D2D317B00255967 /* RecommenModel3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommenModel3.m; sourceTree = "<group>"; };
+		CCF8A3511D2D33C400255967 /* Key.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Key.h; sourceTree = "<group>"; };
+		CCF8A3911D2E7D9D00255967 /* Main2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main2.storyboard; sourceTree = "<group>"; };
+		CCF8A3941D2E808100255967 /* FGTableViewCell1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGTableViewCell1.h; sourceTree = "<group>"; };
+		CCF8A3951D2E808100255967 /* FGTableViewCell1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGTableViewCell1.m; sourceTree = "<group>"; };
+		CCF8A3961D2E808100255967 /* FGTableViewCell1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FGTableViewCell1.xib; sourceTree = "<group>"; };
 		FD4F975CD5F07468F1734407 /* libPods-FirstperspectiveVR.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FirstperspectiveVR.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -189,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				CCE692CF1D25F77600AE5171 /* Main.storyboard */,
+				CCF8A3911D2E7D9D00255967 /* Main2.storyboard */,
 			);
 			name = V;
 			sourceTree = "<group>";
@@ -196,6 +214,13 @@
 		CCE692FB1D25F87B00AE5171 /* M */ = {
 			isa = PBXGroup;
 			children = (
+				CCF8A3481D2D262700255967 /* RecommenModel.h */,
+				CCF8A3491D2D262700255967 /* RecommenModel.m */,
+				CCF8A34B1D2D29B600255967 /* RecommenModel2.h */,
+				CCF8A34C1D2D29B600255967 /* RecommenModel2.m */,
+				CCF8A34E1D2D317B00255967 /* RecommenModel3.h */,
+				CCF8A34F1D2D317B00255967 /* RecommenModel3.m */,
+				CCF8A3511D2D33C400255967 /* Key.h */,
 			);
 			name = M;
 			sourceTree = "<group>";
@@ -203,6 +228,9 @@
 		CCE692FC1D25FCEF00AE5171 /* Recommend */ = {
 			isa = PBXGroup;
 			children = (
+				CCF8A3941D2E808100255967 /* FGTableViewCell1.h */,
+				CCF8A3951D2E808100255967 /* FGTableViewCell1.m */,
+				CCF8A3961D2E808100255967 /* FGTableViewCell1.xib */,
 			);
 			name = Recommend;
 			sourceTree = "<group>";
@@ -345,6 +373,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCE692D61D25F77600AE5171 /* LaunchScreen.storyboard in Resources */,
+				CCF8A3921D2E7D9D00255967 /* Main2.storyboard in Resources */,
+				CCF8A3981D2E808100255967 /* FGTableViewCell1.xib in Resources */,
 				CCE692D31D25F77600AE5171 /* Assets.xcassets in Resources */,
 				CCE692D11D25F77600AE5171 /* Main.storyboard in Resources */,
 			);
@@ -494,9 +524,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCF8A34A1D2D262700255967 /* RecommenModel.m in Sources */,
 				CCE692CB1D25F77600AE5171 /* AppDelegate.m in Sources */,
 				CCE693071D2600F100AE5171 /* LocalTableVC.m in Sources */,
 				CCE692C81D25F77600AE5171 /* main.m in Sources */,
+				CCF8A3501D2D317B00255967 /* RecommenModel3.m in Sources */,
+				CCF8A34D1D2D29B600255967 /* RecommenModel2.m in Sources */,
+				CCF8A3971D2E808100255967 /* FGTableViewCell1.m in Sources */,
 				CCE693021D25FD3A00AE5171 /* MainTabBarVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
