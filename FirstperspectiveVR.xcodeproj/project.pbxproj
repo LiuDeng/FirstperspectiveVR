@@ -9,6 +9,23 @@
 /* Begin PBXBuildFile section */
 		0D990D7A7FEC335B15EA4F92 /* libPods-FirstperspectiveVRUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C2A7C8C5B4052504B203D9B /* libPods-FirstperspectiveVRUITests.a */; };
 		61C52B42AB094425313D03A6 /* libPods-FirstperspectiveVR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD4F975CD5F07468F1734407 /* libPods-FirstperspectiveVR.a */; };
+		CC355FC21D2FC4DD007ACF6E /* FGRecommendCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC355FC11D2FC4DD007ACF6E /* FGRecommendCollectionViewController.m */; };
+		CC355FC91D2FC9D1007ACF6E /* FGCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC355FC71D2FC9D1007ACF6E /* FGCollectionViewCell.m */; };
+		CC355FCA1D2FC9D1007ACF6E /* FGCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC355FC81D2FC9D1007ACF6E /* FGCollectionViewCell.xib */; };
+		CCA068E41D35D61D00CC448F /* VideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA068E31D35D61D00CC448F /* VideoModel.m */; };
+		CCA068E81D3625D900CC448F /* FGDetailViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA068E61D3625D900CC448F /* FGDetailViewViewController.m */; };
+		CCA068E91D3625D900CC448F /* FGDetailViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCA068E71D3625D900CC448F /* FGDetailViewViewController.xib */; };
+		CCA4EED11D332ABD00978705 /* FGCollectionViewCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA4EECF1D332ABD00978705 /* FGCollectionViewCell2.m */; };
+		CCA4EED21D332ABD00978705 /* FGCollectionViewCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCA4EED01D332ABD00978705 /* FGCollectionViewCell2.xib */; };
+		CCA4EED61D332BCC00978705 /* FGCollectionViewCell3.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA4EED41D332BCC00978705 /* FGCollectionViewCell3.m */; };
+		CCA4EED71D332BCC00978705 /* FGCollectionViewCell3.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCA4EED51D332BCC00978705 /* FGCollectionViewCell3.xib */; };
+		CCA4EEDB1D33898900978705 /* FGCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA4EED91D33898900978705 /* FGCollectionReusableView.m */; };
+		CCA4EEDC1D33898900978705 /* FGCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCA4EEDA1D33898900978705 /* FGCollectionReusableView.xib */; };
+		CCA4EEE01D338D8400978705 /* FGCollectionReusableView2.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA4EEDE1D338D8400978705 /* FGCollectionReusableView2.m */; };
+		CCA4EEE11D338D8400978705 /* FGCollectionReusableView2.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCA4EEDF1D338D8400978705 /* FGCollectionReusableView2.xib */; };
+		CCA4EEE31D33C0C500978705 /* cell in Resources */ = {isa = PBXBuildFile; fileRef = CCA4EEE21D33C0C500978705 /* cell */; };
+		CCA4EEE81D33CD1900978705 /* FGUrlDate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA4EEE71D33CD1900978705 /* FGUrlDate.m */; };
+		CCA4EEEC1D35093E00978705 /* social-placeholder@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCA4EEEB1D35093E00978705 /* social-placeholder@3x.png */; };
 		CCE692C81D25F77600AE5171 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE692C71D25F77600AE5171 /* main.m */; };
 		CCE692CB1D25F77600AE5171 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE692CA1D25F77600AE5171 /* AppDelegate.m */; };
 		CCE692D11D25F77600AE5171 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCE692CF1D25F77600AE5171 /* Main.storyboard */; };
@@ -22,8 +39,6 @@
 		CCF8A34D1D2D29B600255967 /* RecommenModel2.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF8A34C1D2D29B600255967 /* RecommenModel2.m */; };
 		CCF8A3501D2D317B00255967 /* RecommenModel3.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF8A34F1D2D317B00255967 /* RecommenModel3.m */; };
 		CCF8A3921D2E7D9D00255967 /* Main2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCF8A3911D2E7D9D00255967 /* Main2.storyboard */; };
-		CCF8A3971D2E808100255967 /* FGTableViewCell1.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF8A3951D2E808100255967 /* FGTableViewCell1.m */; };
-		CCF8A3981D2E808100255967 /* FGTableViewCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCF8A3961D2E808100255967 /* FGTableViewCell1.xib */; };
 		ED47E5939287F40259172CE7 /* libPods-FirstperspectiveVRTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30FFC74399986E4753FB7B8E /* libPods-FirstperspectiveVRTests.a */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +68,32 @@
 		9B33D76DFBAFB8A787381390 /* Pods-FirstperspectiveVRUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstperspectiveVRUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirstperspectiveVRUITests/Pods-FirstperspectiveVRUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9F71712C93753A336648DA3C /* Pods-FirstperspectiveVR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstperspectiveVR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirstperspectiveVR/Pods-FirstperspectiveVR.debug.xcconfig"; sourceTree = "<group>"; };
 		C78CA5281C5465002AE12E96 /* Pods-FirstperspectiveVRUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstperspectiveVRUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirstperspectiveVRUITests/Pods-FirstperspectiveVRUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CC355FC01D2FC4DD007ACF6E /* FGRecommendCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGRecommendCollectionViewController.h; sourceTree = "<group>"; };
+		CC355FC11D2FC4DD007ACF6E /* FGRecommendCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGRecommendCollectionViewController.m; sourceTree = "<group>"; };
+		CC355FC61D2FC9D1007ACF6E /* FGCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGCollectionViewCell.h; sourceTree = "<group>"; };
+		CC355FC71D2FC9D1007ACF6E /* FGCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGCollectionViewCell.m; sourceTree = "<group>"; };
+		CC355FC81D2FC9D1007ACF6E /* FGCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FGCollectionViewCell.xib; sourceTree = "<group>"; };
+		CCA068E21D35D61D00CC448F /* VideoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoModel.h; sourceTree = "<group>"; };
+		CCA068E31D35D61D00CC448F /* VideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoModel.m; sourceTree = "<group>"; };
+		CCA068E51D3625D900CC448F /* FGDetailViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGDetailViewViewController.h; sourceTree = "<group>"; };
+		CCA068E61D3625D900CC448F /* FGDetailViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGDetailViewViewController.m; sourceTree = "<group>"; };
+		CCA068E71D3625D900CC448F /* FGDetailViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FGDetailViewViewController.xib; sourceTree = "<group>"; };
+		CCA4EECE1D332ABD00978705 /* FGCollectionViewCell2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGCollectionViewCell2.h; sourceTree = "<group>"; };
+		CCA4EECF1D332ABD00978705 /* FGCollectionViewCell2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGCollectionViewCell2.m; sourceTree = "<group>"; };
+		CCA4EED01D332ABD00978705 /* FGCollectionViewCell2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FGCollectionViewCell2.xib; sourceTree = "<group>"; };
+		CCA4EED31D332BCC00978705 /* FGCollectionViewCell3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGCollectionViewCell3.h; sourceTree = "<group>"; };
+		CCA4EED41D332BCC00978705 /* FGCollectionViewCell3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGCollectionViewCell3.m; sourceTree = "<group>"; };
+		CCA4EED51D332BCC00978705 /* FGCollectionViewCell3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FGCollectionViewCell3.xib; sourceTree = "<group>"; };
+		CCA4EED81D33898900978705 /* FGCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGCollectionReusableView.h; sourceTree = "<group>"; };
+		CCA4EED91D33898900978705 /* FGCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGCollectionReusableView.m; sourceTree = "<group>"; };
+		CCA4EEDA1D33898900978705 /* FGCollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FGCollectionReusableView.xib; sourceTree = "<group>"; };
+		CCA4EEDD1D338D8400978705 /* FGCollectionReusableView2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGCollectionReusableView2.h; sourceTree = "<group>"; };
+		CCA4EEDE1D338D8400978705 /* FGCollectionReusableView2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGCollectionReusableView2.m; sourceTree = "<group>"; };
+		CCA4EEDF1D338D8400978705 /* FGCollectionReusableView2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FGCollectionReusableView2.xib; sourceTree = "<group>"; };
+		CCA4EEE21D33C0C500978705 /* cell */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cell; sourceTree = "<group>"; };
+		CCA4EEE61D33CD1900978705 /* FGUrlDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGUrlDate.h; sourceTree = "<group>"; };
+		CCA4EEE71D33CD1900978705 /* FGUrlDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGUrlDate.m; sourceTree = "<group>"; };
+		CCA4EEEB1D35093E00978705 /* social-placeholder@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "social-placeholder@3x.png"; path = "cell/social-placeholder.imageset/social-placeholder@3x.png"; sourceTree = "<group>"; };
 		CCE692C31D25F77600AE5171 /* FirstperspectiveVR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstperspectiveVR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCE692C71D25F77600AE5171 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CCE692C91D25F77600AE5171 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -79,9 +120,6 @@
 		CCF8A34F1D2D317B00255967 /* RecommenModel3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommenModel3.m; sourceTree = "<group>"; };
 		CCF8A3511D2D33C400255967 /* Key.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Key.h; sourceTree = "<group>"; };
 		CCF8A3911D2E7D9D00255967 /* Main2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main2.storyboard; sourceTree = "<group>"; };
-		CCF8A3941D2E808100255967 /* FGTableViewCell1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGTableViewCell1.h; sourceTree = "<group>"; };
-		CCF8A3951D2E808100255967 /* FGTableViewCell1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGTableViewCell1.m; sourceTree = "<group>"; };
-		CCF8A3961D2E808100255967 /* FGTableViewCell1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FGTableViewCell1.xib; sourceTree = "<group>"; };
 		FD4F975CD5F07468F1734407 /* libPods-FirstperspectiveVR.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FirstperspectiveVR.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -126,6 +164,31 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		CC355FBF1D2F36DB007ACF6E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CC355FC61D2FC9D1007ACF6E /* FGCollectionViewCell.h */,
+				CC355FC71D2FC9D1007ACF6E /* FGCollectionViewCell.m */,
+				CC355FC81D2FC9D1007ACF6E /* FGCollectionViewCell.xib */,
+				CCA4EECE1D332ABD00978705 /* FGCollectionViewCell2.h */,
+				CCA4EECF1D332ABD00978705 /* FGCollectionViewCell2.m */,
+				CCA4EED01D332ABD00978705 /* FGCollectionViewCell2.xib */,
+				CCA4EED31D332BCC00978705 /* FGCollectionViewCell3.h */,
+				CCA4EED41D332BCC00978705 /* FGCollectionViewCell3.m */,
+				CCA4EED51D332BCC00978705 /* FGCollectionViewCell3.xib */,
+				CCA4EED81D33898900978705 /* FGCollectionReusableView.h */,
+				CCA4EED91D33898900978705 /* FGCollectionReusableView.m */,
+				CCA4EEDA1D33898900978705 /* FGCollectionReusableView.xib */,
+				CCA4EEDD1D338D8400978705 /* FGCollectionReusableView2.h */,
+				CCA4EEDE1D338D8400978705 /* FGCollectionReusableView2.m */,
+				CCA4EEDF1D338D8400978705 /* FGCollectionReusableView2.xib */,
+				CCA068E51D3625D900CC448F /* FGDetailViewViewController.h */,
+				CCA068E61D3625D900CC448F /* FGDetailViewViewController.m */,
+				CCA068E71D3625D900CC448F /* FGDetailViewViewController.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		CCE692BA1D25F77600AE5171 = {
 			isa = PBXGroup;
 			children = (
@@ -151,8 +214,8 @@
 		CCE692C51D25F77600AE5171 /* FirstperspectiveVR */ = {
 			isa = PBXGroup;
 			children = (
+				CC355FBF1D2F36DB007ACF6E /* Views */,
 				CCE692FB1D25F87B00AE5171 /* M */,
-				CCE692FA1D25F87100AE5171 /* V */,
 				CCE692F91D25F86900AE5171 /* C */,
 				CCE692C61D25F77600AE5171 /* Supporting Files */,
 			);
@@ -162,12 +225,16 @@
 		CCE692C61D25F77600AE5171 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CCA4EEEB1D35093E00978705 /* social-placeholder@3x.png */,
+				CCA4EEE21D33C0C500978705 /* cell */,
+				CCF8A3911D2E7D9D00255967 /* Main2.storyboard */,
 				CCE692D41D25F77600AE5171 /* LaunchScreen.storyboard */,
 				CCE692C91D25F77600AE5171 /* AppDelegate.h */,
 				CCE692CA1D25F77600AE5171 /* AppDelegate.m */,
 				CCE692D21D25F77600AE5171 /* Assets.xcassets */,
 				CCE692D71D25F77600AE5171 /* Info.plist */,
 				CCE692C71D25F77600AE5171 /* main.m */,
+				CCE692FA1D25F87100AE5171 /* 千万不能碰 */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -202,13 +269,12 @@
 			name = C;
 			sourceTree = "<group>";
 		};
-		CCE692FA1D25F87100AE5171 /* V */ = {
+		CCE692FA1D25F87100AE5171 /* 千万不能碰 */ = {
 			isa = PBXGroup;
 			children = (
 				CCE692CF1D25F77600AE5171 /* Main.storyboard */,
-				CCF8A3911D2E7D9D00255967 /* Main2.storyboard */,
 			);
-			name = V;
+			name = "千万不能碰";
 			sourceTree = "<group>";
 		};
 		CCE692FB1D25F87B00AE5171 /* M */ = {
@@ -220,7 +286,11 @@
 				CCF8A34C1D2D29B600255967 /* RecommenModel2.m */,
 				CCF8A34E1D2D317B00255967 /* RecommenModel3.h */,
 				CCF8A34F1D2D317B00255967 /* RecommenModel3.m */,
+				CCA068E21D35D61D00CC448F /* VideoModel.h */,
+				CCA068E31D35D61D00CC448F /* VideoModel.m */,
 				CCF8A3511D2D33C400255967 /* Key.h */,
+				CCA4EEE61D33CD1900978705 /* FGUrlDate.h */,
+				CCA4EEE71D33CD1900978705 /* FGUrlDate.m */,
 			);
 			name = M;
 			sourceTree = "<group>";
@@ -228,9 +298,8 @@
 		CCE692FC1D25FCEF00AE5171 /* Recommend */ = {
 			isa = PBXGroup;
 			children = (
-				CCF8A3941D2E808100255967 /* FGTableViewCell1.h */,
-				CCF8A3951D2E808100255967 /* FGTableViewCell1.m */,
-				CCF8A3961D2E808100255967 /* FGTableViewCell1.xib */,
+				CC355FC01D2FC4DD007ACF6E /* FGRecommendCollectionViewController.h */,
+				CC355FC11D2FC4DD007ACF6E /* FGRecommendCollectionViewController.m */,
 			);
 			name = Recommend;
 			sourceTree = "<group>";
@@ -372,11 +441,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCA4EEE31D33C0C500978705 /* cell in Resources */,
+				CCA4EED71D332BCC00978705 /* FGCollectionViewCell3.xib in Resources */,
 				CCE692D61D25F77600AE5171 /* LaunchScreen.storyboard in Resources */,
 				CCF8A3921D2E7D9D00255967 /* Main2.storyboard in Resources */,
-				CCF8A3981D2E808100255967 /* FGTableViewCell1.xib in Resources */,
+				CCA4EEE11D338D8400978705 /* FGCollectionReusableView2.xib in Resources */,
+				CCA4EED21D332ABD00978705 /* FGCollectionViewCell2.xib in Resources */,
+				CCA4EEDC1D33898900978705 /* FGCollectionReusableView.xib in Resources */,
+				CC355FCA1D2FC9D1007ACF6E /* FGCollectionViewCell.xib in Resources */,
 				CCE692D31D25F77600AE5171 /* Assets.xcassets in Resources */,
+				CCA068E91D3625D900CC448F /* FGDetailViewViewController.xib in Resources */,
 				CCE692D11D25F77600AE5171 /* Main.storyboard in Resources */,
+				CCA4EEEC1D35093E00978705 /* social-placeholder@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,13 +600,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCA4EEDB1D33898900978705 /* FGCollectionReusableView.m in Sources */,
+				CCA068E81D3625D900CC448F /* FGDetailViewViewController.m in Sources */,
 				CCF8A34A1D2D262700255967 /* RecommenModel.m in Sources */,
+				CCA4EEE81D33CD1900978705 /* FGUrlDate.m in Sources */,
+				CCA4EED61D332BCC00978705 /* FGCollectionViewCell3.m in Sources */,
+				CC355FC91D2FC9D1007ACF6E /* FGCollectionViewCell.m in Sources */,
 				CCE692CB1D25F77600AE5171 /* AppDelegate.m in Sources */,
 				CCE693071D2600F100AE5171 /* LocalTableVC.m in Sources */,
 				CCE692C81D25F77600AE5171 /* main.m in Sources */,
 				CCF8A3501D2D317B00255967 /* RecommenModel3.m in Sources */,
+				CC355FC21D2FC4DD007ACF6E /* FGRecommendCollectionViewController.m in Sources */,
 				CCF8A34D1D2D29B600255967 /* RecommenModel2.m in Sources */,
-				CCF8A3971D2E808100255967 /* FGTableViewCell1.m in Sources */,
+				CCA068E41D35D61D00CC448F /* VideoModel.m in Sources */,
+				CCA4EEE01D338D8400978705 /* FGCollectionReusableView2.m in Sources */,
+				CCA4EED11D332ABD00978705 /* FGCollectionViewCell2.m in Sources */,
 				CCE693021D25FD3A00AE5171 /* MainTabBarVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

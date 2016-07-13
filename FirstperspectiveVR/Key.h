@@ -57,4 +57,36 @@ static NSString *Ksort = @"sort";
 static NSString *KMovie_id = @"movie_id";
 static NSString *KCoop_movieid =@"coop_movieid";
 
+//------------------------------------
+static NSString *KId = @"id";
+static NSString *KSource =@"source";
+static NSString *KTitle = @"title";
+static NSString *KTypeid = @"typeid";
+static NSString *KDescription = @"description";
+//static NSString *KBrief = @"brief";
+static NSString *KMaxseq = @"maxseq";
+static NSString *KTotal = @"total";
+static NSString *KFinish = @"finish";
+static NSString *KSeqstr = @"seq_str";
+static NSString *KDirectors = @"directors";
+static NSString *KActors = @"actors";
+static NSString *KWriters = @"writers";
+static NSString *KPosters = @"posters";
+static NSString *KAutors = @"autors";
+static NSString *KVoices = @"voices";
+static NSString *KArea = @"area";
+static NSString *KCate = @"cate";
+static NSString *KCoopMovieid = @"coopMovieid";
+static NSString *KPlay_time = @"paly_time";
+static NSString *KUpdate_brief = @"update_brief";
+static NSString *KTelevision = @"television";
+static NSString *KPic = @"pic";
+static NSString *KHpic = @"hpic";
+static NSString *KScore = @"score";
+static NSString *Kscore_float = @"Score_float";
+static NSString *KMovie_type = @"movie_type";
+static NSString *K3d = @"3d";
+static NSString *KAlbums = @"albums";
+static NSString *KDuration = @"duration";
+
 #endif /* Key_h */

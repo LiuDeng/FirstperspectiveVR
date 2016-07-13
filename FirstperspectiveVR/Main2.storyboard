@@ -34,60 +34,39 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="oDh-X2-BHP" kind="relationship" relationship="rootViewController" id="BO1-BX-ThY"/>
+                        <segue destination="nnP-CH-vcG" kind="relationship" relationship="rootViewController" id="6ha-PZ-mty"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k1a-Ak-0n0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-23" y="1075"/>
         </scene>
-        <!--Title-->
-        <scene sceneID="BAu-jR-GcD">
+        <!--推荐-->
+        <scene sceneID="ae4-pT-QER">
             <objects>
-                <tableViewController id="oDh-X2-BHP" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="z4q-oo-PAg">
+                <collectionViewController id="nnP-CH-vcG" userLabel="推荐" customClass="FGRecommendCollectionViewController" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="yDJ-cE-XHf">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="OTk-dU-QDO" detailTextLabel="TRy-Jd-Nf7" style="IBUITableViewCellStyleValue1" id="Od5-RH-cVZ">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Od5-RH-cVZ" id="buo-u7-ohw">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OTk-dU-QDO">
-                                            <rect key="frame" x="15" y="12" width="31.5" height="19.5"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TRy-Jd-Nf7">
-                                            <rect key="frame" x="543.5" y="12" width="41.5" height="19.5"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <sections/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="doq-Ey-Fsk">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
                         <connections>
-                            <outlet property="dataSource" destination="oDh-X2-BHP" id="rxL-g2-dxX"/>
-                            <outlet property="delegate" destination="oDh-X2-BHP" id="Fh6-EZ-tKE"/>
+                            <outlet property="dataSource" destination="nnP-CH-vcG" id="rUH-13-gQo"/>
+                            <outlet property="delegate" destination="nnP-CH-vcG" id="T4S-wC-cwT"/>
                         </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Title" id="iFL-ry-dye">
-                        <barButtonItem key="leftBarButtonItem" title="五刚VR精品" id="nWA-51-V1Q"/>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="推荐" id="g6y-Ru-ZfV">
+                        <barButtonItem key="leftBarButtonItem" title="五刚VR精品" id="iAo-go-mn3"/>
                     </navigationItem>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="U1T-1r-N0C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rS3-lG-pYV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3" y="1832"/>
+            <point key="canvasLocation" x="-64" y="1733"/>
         </scene>
     </scenes>
 </document>
