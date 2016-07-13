@@ -11,7 +11,7 @@
 @interface RecommenModel : NSObject
 
 @property (nonatomic, strong)NSString *banner_pic_path;//图片网址
-@property (nonatomic, strong)NSString *banner_res_id;//获取资源参数码
+@property (nonatomic, strong)NSString *banner_res_id;//获取资源参数码##imwadad
 @property (nonatomic, strong)NSString *banner_type;
 @property (nonatomic, strong)NSString *banner_sort;
 @property (nonatomic, strong)NSString *banner_subtitle;//副标题
