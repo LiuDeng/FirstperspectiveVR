@@ -18,6 +18,10 @@
 		CC3AE02C1D371D19009BE50B /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC3AE0291D371D19009BE50B /* CollectionViewCell.xib */; };
 		CC3AE0321D371F71009BE50B /* SubChannelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3AE0311D371F71009BE50B /* SubChannelVC.m */; };
 		CC3AE03B1D3722C1009BE50B /* DataCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3AE03A1D3722C1009BE50B /* DataCollectionViewController.m */; };
+		CC3AE0801D37BC58009BE50B /* Main.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC3AE07F1D37BC58009BE50B /* Main.plist */; };
+		CC3AE0821D37BC84009BE50B /* quanjing.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC3AE0811D37BC84009BE50B /* quanjing.plist */; };
+		CC3AE0841D37BE3F009BE50B /* zaixian.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC3AE0831D37BE3F009BE50B /* zaixian.plist */; };
+		CC3AE0861D37BEF7009BE50B /* youxi.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC3AE0851D37BEF7009BE50B /* youxi.plist */; };
 		CCA068E41D35D61D00CC448F /* VideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA068E31D35D61D00CC448F /* VideoModel.m */; };
 		CCA068E81D3625D900CC448F /* FGDetailViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA068E61D3625D900CC448F /* FGDetailViewViewController.m */; };
 		CCA068E91D3625D900CC448F /* FGDetailViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCA068E71D3625D900CC448F /* FGDetailViewViewController.xib */; };
@@ -90,6 +94,10 @@
 		CC3AE0311D371F71009BE50B /* SubChannelVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubChannelVC.m; sourceTree = "<group>"; };
 		CC3AE0391D3722C1009BE50B /* DataCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataCollectionViewController.h; sourceTree = "<group>"; };
 		CC3AE03A1D3722C1009BE50B /* DataCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataCollectionViewController.m; sourceTree = "<group>"; };
+		CC3AE07F1D37BC58009BE50B /* Main.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Main.plist; sourceTree = "<group>"; };
+		CC3AE0811D37BC84009BE50B /* quanjing.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = quanjing.plist; sourceTree = "<group>"; };
+		CC3AE0831D37BE3F009BE50B /* zaixian.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = zaixian.plist; sourceTree = "<group>"; };
+		CC3AE0851D37BEF7009BE50B /* youxi.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = youxi.plist; sourceTree = "<group>"; };
 		CCA068E21D35D61D00CC448F /* VideoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoModel.h; sourceTree = "<group>"; };
 		CCA068E31D35D61D00CC448F /* VideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoModel.m; sourceTree = "<group>"; };
 		CCA068E51D3625D900CC448F /* FGDetailViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGDetailViewViewController.h; sourceTree = "<group>"; };
@@ -294,6 +302,10 @@
 		CCE692FA1D25F87100AE5171 /* 千万不能碰 */ = {
 			isa = PBXGroup;
 			children = (
+				CC3AE07F1D37BC58009BE50B /* Main.plist */,
+				CC3AE0811D37BC84009BE50B /* quanjing.plist */,
+				CC3AE0831D37BE3F009BE50B /* zaixian.plist */,
+				CC3AE0851D37BEF7009BE50B /* youxi.plist */,
 				CCE692CF1D25F77600AE5171 /* Main.storyboard */,
 			);
 			name = "千万不能碰";
@@ -472,14 +484,18 @@
 				CCA4EEE31D33C0C500978705 /* cell in Resources */,
 				CCA4EED71D332BCC00978705 /* FGCollectionViewCell3.xib in Resources */,
 				CCE692D61D25F77600AE5171 /* LaunchScreen.storyboard in Resources */,
+				CC3AE0821D37BC84009BE50B /* quanjing.plist in Resources */,
 				CCF8A3921D2E7D9D00255967 /* Main2.storyboard in Resources */,
 				CCA4EEE11D338D8400978705 /* FGCollectionReusableView2.xib in Resources */,
 				CC3AE02C1D371D19009BE50B /* CollectionViewCell.xib in Resources */,
 				CCA4EED21D332ABD00978705 /* FGCollectionViewCell2.xib in Resources */,
 				CCA4EEDC1D33898900978705 /* FGCollectionReusableView.xib in Resources */,
+				CC3AE0801D37BC58009BE50B /* Main.plist in Resources */,
 				CC355FCA1D2FC9D1007ACF6E /* FGCollectionViewCell.xib in Resources */,
+				CC3AE0841D37BE3F009BE50B /* zaixian.plist in Resources */,
 				CCE692D31D25F77600AE5171 /* Assets.xcassets in Resources */,
 				CCA068E91D3625D900CC448F /* FGDetailViewViewController.xib in Resources */,
+				CC3AE0861D37BEF7009BE50B /* youxi.plist in Resources */,
 				CCE692D11D25F77600AE5171 /* Main.storyboard in Resources */,
 				CCA4EEEC1D35093E00978705 /* social-placeholder@3x.png in Resources */,
 			);

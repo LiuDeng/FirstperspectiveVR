@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>精选</string>
+		<key>url</key>
+		<string>http://img.static.mojing.cn/resource/movie/ios/market/channel_content/32.js</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>电影</string>
+		<key>url</key>
+		<string>http://img.static.mojing.cn/resource/movie/ios/market/channel_content/24.js</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>动漫</string>
+		<key>url</key>
+		<string>http://img.static.mojing.cn/resource/movie/ios/market/channel_content/25.js</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>3D</string>
+		<key>url</key>
+		<string>http://img.static.mojing.cn/resource/movie/ios/market/channel_content/26.js</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>电视剧</string>
+		<key>url</key>
+		<string>http://img.static.mojing.cn/resource/movie/ios/market/channel_content/48.js</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>综艺</string>
+		<key>url</key>
+		<string>http://img.static.mojing.cn/resource/movie/ios/market/channel_content/49.js</string>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>全景视频</string>
+		<key>url</key>
+		<string>http://img.static.mojing.cn/resource/newmarket/ios/20160426/channel/16.js</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>全景漫游</string>
+		<key>url</key>
+		<string>http://img.static.mojing.cn/resource/newmarket/ios/20160426/channel/18.js</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>全景图片</string>
+		<key>url</key>
+		<string>http://img.static.mojing.cn/resource/newmarket/ios/20160426/channel/17.js</string>
+	</dict>
+</array>
+</plist>

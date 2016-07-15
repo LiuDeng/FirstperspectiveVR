@@ -19,7 +19,7 @@
 @implementation ChannelVC
 -(NSArray *)titles{
     if (_titles == nil) {
-        NSString* path=[[NSBundle mainBundle]pathForResource:@"collection" ofType:@"plist"];
+        NSString* path=[[NSBundle mainBundle]pathForResource:@"Main" ofType:@"plist"];
         _titles=[NSArray arrayWithContentsOfFile:path];
     }
     return _titles;
@@ -51,6 +51,8 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self addChildViewController:self.pageVC];
+    [self.view addSubview:self.pageVC.view];
     self.navigationItem.titleView = self.titleCollectionView;
     self.navigationItem.titleView.backgroundColor=[UIColor colorWithRed:41 green:220 blue:230 alpha:1];
     CGFloat CWidth = [UIScreen mainScreen].bounds.size.width;
@@ -84,8 +86,8 @@
     }
     
     SubChannelVC *dataVC = [[SubChannelVC alloc] init];
-    dataVC.type = self.titles[index];
-    dataVC.dataUrl=(self.titles[index])[@"url"];
+//    dataVC.type = self.titles[index];
+//    dataVC.dataUrl=(self.titles[index])[@"url"];
     dataVC.name=(self.titles[index])[@"name"];
     
     //    dataVC.updateUrl=(self.titles[index])[@"updateUrl"];
