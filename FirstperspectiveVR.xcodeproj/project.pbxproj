@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0D990D7A7FEC335B15EA4F92 /* libPods-FirstperspectiveVRUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C2A7C8C5B4052504B203D9B /* libPods-FirstperspectiveVRUITests.a */; };
 		61C52B42AB094425313D03A6 /* libPods-FirstperspectiveVR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD4F975CD5F07468F1734407 /* libPods-FirstperspectiveVR.a */; };
+		CC0D64141D3D14C6003C02FA /* FmdbTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0D64131D3D14C6003C02FA /* FmdbTool.m */; };
 		CC355FC21D2FC4DD007ACF6E /* FGRecommendCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC355FC11D2FC4DD007ACF6E /* FGRecommendCollectionViewController.m */; };
 		CC355FC91D2FC9D1007ACF6E /* FGCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC355FC71D2FC9D1007ACF6E /* FGCollectionViewCell.m */; };
 		CC355FCA1D2FC9D1007ACF6E /* FGCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC355FC81D2FC9D1007ACF6E /* FGCollectionViewCell.xib */; };
@@ -81,6 +82,8 @@
 		9B33D76DFBAFB8A787381390 /* Pods-FirstperspectiveVRUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstperspectiveVRUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirstperspectiveVRUITests/Pods-FirstperspectiveVRUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9F71712C93753A336648DA3C /* Pods-FirstperspectiveVR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstperspectiveVR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirstperspectiveVR/Pods-FirstperspectiveVR.debug.xcconfig"; sourceTree = "<group>"; };
 		C78CA5281C5465002AE12E96 /* Pods-FirstperspectiveVRUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstperspectiveVRUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirstperspectiveVRUITests/Pods-FirstperspectiveVRUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CC0D64121D3D14C6003C02FA /* FmdbTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FmdbTool.h; sourceTree = "<group>"; };
+		CC0D64131D3D14C6003C02FA /* FmdbTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FmdbTool.m; sourceTree = "<group>"; };
 		CC355FC01D2FC4DD007ACF6E /* FGRecommendCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGRecommendCollectionViewController.h; sourceTree = "<group>"; };
 		CC355FC11D2FC4DD007ACF6E /* FGRecommendCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGRecommendCollectionViewController.m; sourceTree = "<group>"; };
 		CC355FC61D2FC9D1007ACF6E /* FGCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGCollectionViewCell.h; sourceTree = "<group>"; };
@@ -197,6 +200,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		CC0D64111D3D14AD003C02FA /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				CC0D64121D3D14C6003C02FA /* FmdbTool.h */,
+				CC0D64131D3D14C6003C02FA /* FmdbTool.m */,
+			);
+			name = FMDB;
+			sourceTree = "<group>";
+		};
 		CC355FBF1D2F36DB007ACF6E /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,6 +264,7 @@
 		CCE692C51D25F77600AE5171 /* FirstperspectiveVR */ = {
 			isa = PBXGroup;
 			children = (
+				CC0D64111D3D14AD003C02FA /* FMDB */,
 				CC355FBF1D2F36DB007ACF6E /* Views */,
 				CCE692FB1D25F87B00AE5171 /* M */,
 				CCE692F91D25F86900AE5171 /* C */,
@@ -679,6 +692,7 @@
 				CC3FBF501D3CF88900E34402 /* VAttrsModel.m in Sources */,
 				CCA068E41D35D61D00CC448F /* VideoModel.m in Sources */,
 				CCA4EEE01D338D8400978705 /* FGCollectionReusableView2.m in Sources */,
+				CC0D64141D3D14C6003C02FA /* FmdbTool.m in Sources */,
 				CCA4EED11D332ABD00978705 /* FGCollectionViewCell2.m in Sources */,
 				CC3FBF4D1D3CF19400E34402 /* VModelFirst.m in Sources */,
 				CCE693021D25FD3A00AE5171 /* MainTabBarVC.m in Sources */,
