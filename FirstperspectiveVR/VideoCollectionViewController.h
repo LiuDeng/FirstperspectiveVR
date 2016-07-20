@@ -1,13 +1,13 @@
 //
-//  FGRecommendCollectionViewController.h
+//  VideoCollectionViewController.h
 //  FirstperspectiveVR
 //
-//  Created by qingyun on 16/7/8.
+//  Created by qingyun on 16/7/18.
 //  Copyright © 2016年 qingyun. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface FGRecommendCollectionViewController : UICollectionViewController
+@interface VideoCollectionViewController : UICollectionViewController
 - (void)getDateWithUrl:(NSString *)url;
 @end

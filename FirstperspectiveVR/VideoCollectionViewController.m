@@ -1,13 +1,12 @@
 //
-//  FGRecommendCollectionViewController.m
+//  VideoCollectionViewController.m
 //  FirstperspectiveVR
 //
-//  Created by qingyun on 16/7/8.
+//  Created by qingyun on 16/7/18.
 //  Copyright © 2016年 qingyun. All rights reserved.
 //
 
-#import "FGRecommendCollectionViewController.h"
-#import "FGUrlDate.h"
+#import "VideoCollectionViewController.h"
 #import "FGCollectionViewCell.h"
 #import "FGCollectionViewCell2.h"
 #import "FGCollectionViewCell3.h"
@@ -19,21 +18,17 @@
 #import "ListItemsDataModel.h"
 #import "ListDetailModel.h"
 #import "FGDetailViewViewController.h"
-#import "MoreCollectionViewController.h"
+
 
 #define VIEWW [UIScreen mainScreen].bounds.size.width
-
-
-@interface FGRecommendCollectionViewController ()<UICollectionViewDelegateFlowLayout>
+@interface VideoCollectionViewController ()<UICollectionViewDelegateFlowLayout>
 @property (nonatomic, strong)AFHTTPSessionManager *sessionManager;
 @property (nonatomic, strong) NSArray *modelArr;
 @property (nonatomic, strong) RecommendModel *recommendModel;
-@property (nonatomic, strong) FGUrlDate *fgUrlDate;
-@property(nonatomic, strong) UICollectionViewFlowLayout *flowlayout;
-
 @end
 
-@implementation FGRecommendCollectionViewController
+@implementation VideoCollectionViewController
+
 static NSString *Klist = @"list";
 static NSString *Kcolumns = @"columns";
 static NSString * reuseIdentifier = @"Cell";
@@ -44,26 +39,11 @@ static NSString * headerIdentifier2 = @"header2";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //请求数据
-    NSString *urlStr = @"http://res.static.mojing.cn/160630-1-1-1/ios/zh/1/page/443512.js";
-    [self getDateWithUrl:urlStr];
+    
     //请求第4组嵌套数据
     self.collectionView.backgroundColor = [UIColor whiteColor];
     //创建一个laout对象
-    _flowlayout = [[UICollectionViewFlowLayout alloc] init];
-    _flowlayout.minimumLineSpacing = 10.0;//行间距
-    _flowlayout.minimumInteritemSpacing = 10.0;//itme间距
-    //section的头尾size,scrollDirection为垂直,Size中的高度起作用;scrollDirection为水平,Size中的宽度起作用
-//    flowLayout.headerReferenceSize = CGSizeMake(30, 30);
-//    flowLayout.footerReferenceSize = CGSizeMake(30, 30);
-    _flowlayout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);//sectionInset边距
-    //设置section头视图悬浮
-    _flowlayout.sectionHeadersPinToVisibleBounds = NO;
-//    flowLayout.estimatedItemSize = CGSizeMake(50, 100);
-    UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:self.collectionView.frame collectionViewLayout:_flowlayout];
-    [collectionView setBackgroundColor:[UIColor whiteColor]];
-    
-    self.collectionView = collectionView;
+   
     [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([FGCollectionViewCell class]) bundle:nil] forCellWithReuseIdentifier:reuseIdentifier];
     [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([FGCollectionViewCell2 class]) bundle:nil] forCellWithReuseIdentifier:reuseIdentifier2];
     [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([FGCollectionViewCell3 class]) bundle:nil] forCellWithReuseIdentifier:reuseIdentifier3];
@@ -71,6 +51,8 @@ static NSString * headerIdentifier2 = @"header2";
     [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([FGCollectionReusableView2 class]) bundle:nil] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:headerIdentifier2];
     
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -87,80 +69,42 @@ static NSString * headerIdentifier2 = @"header2";
 }
 */
 
-#pragma mark - UICollectionViewDelegateFlowLayout
+#pragma mark <UICollectionViewDataSource>
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
+    ListItemsDataModel *listItemsDataModel = _recommendModel.data[indexPath.section+1];
     CGSize itemSize = CGSizeMake(0, 0);
-    switch (indexPath.section) {
-        case 0:
-            itemSize =  CGSizeMake((VIEWW-60)/5 , 80);
-            break;
-        case 1:
-            itemSize = CGSizeMake((VIEWW-30)/2, 140);
-            break;
-        case 2:
-            itemSize = CGSizeMake((VIEWW-30)/2, 140);
-            break;
-        case 3:
-            itemSize = CGSizeMake((VIEWW-40)/3, 150);
-            break;
-        case 4:
-            itemSize = CGSizeMake((VIEWW-40)/3, 150);
-            break;
-        case 5:
-            itemSize = CGSizeMake((VIEWW-40)/3, 150);
-            break;
-        case 6:
-            itemSize = CGSizeMake((VIEWW-30)/2, 140);
-            break;
-        case 7:
-            itemSize = CGSizeMake((VIEWW-30)/2, 140);
-            break;
-        case 8:
-            itemSize = CGSizeMake((VIEWW-40)/3, 150);
-            break;
-        case 9:
-            itemSize = CGSizeMake((VIEWW-40)/3, 150);
-            break;
-        case 10:
-            itemSize = CGSizeMake((VIEWW-50)/4, 120);
-            break;
-        default:
-            break;
-    }
+    if ([listItemsDataModel.layout_type isEqualToString:@"video-h2"]) {
+        itemSize = CGSizeMake((VIEWW-30)/2, 140);
+        return itemSize;
+    }else if ([listItemsDataModel.layout_type isEqualToString:@"nav-single"]){
+        itemSize = CGSizeMake((VIEWW -60)/5, 80);
+    }else
+        itemSize = CGSizeMake((VIEWW -40)/3, 150);
     return itemSize;
+    
 }
-#if 0
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath;
-- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section;
-- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section;
-- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section;
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section;
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section;
-#endif
 
-
-#pragma mark <UICollectionViewDataSource>
-//组数
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
 
     return _recommendModel.data.count-1;
 }
 
-//每一组cell的数量
+
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+
     ListItemsDataModel *listItemsDataModel = _recommendModel.data[section+1];
     return listItemsDataModel.list.count;
 }
-//Cell的内容及格式
+
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     ListItemsDataModel *listItemsDataModel = _recommendModel.data[indexPath.section+1];
-    if (indexPath.section == 4||indexPath.section == 5||indexPath.section == 8||indexPath.section == 9)
+    if ([listItemsDataModel.layout_type isEqualToString:@"video-h2"])
     {
         FGCollectionViewCell3 *cell2 = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier3 forIndexPath:indexPath];
         cell2.listDetailModel = listItemsDataModel.list[indexPath.row];
         return cell2;
-    }else if (indexPath.section == 0)
+    }else if ([listItemsDataModel.layout_type isEqualToString:@"nav-single"])
     {
         FGCollectionViewCell2 *cell2 = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier2 forIndexPath:indexPath];
         cell2.listDetailModel = listItemsDataModel.list[indexPath.row];
@@ -172,6 +116,7 @@ static NSString * headerIdentifier2 = @"header2";
         cell.listDetailModel = listItemsDataModel.list[indexPath.row];
         return cell;
     }
+
 }
 
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section{
@@ -182,37 +127,23 @@ static NSString * headerIdentifier2 = @"header2";
 }
 
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath{
-    //btn点击block块实现
-    __weak FGRecommendCollectionViewController *weakRecommendVC = self;
-    
-    
     ListItemsDataModel *listItemsDataModel = _recommendModel.data[indexPath.section];
-    ListDetailModel *detailModel = listItemsDataModel.list[0];
     if (indexPath.section == 0) {
         FGCollectionReusableView2 *sectionHeaderViewScroll = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:headerIdentifier2 forIndexPath:indexPath];
         listItemsDataModel = _recommendModel.data[0];
+        ListDetailModel *detailModel = listItemsDataModel.list[0];
+        
         sectionHeaderViewScroll.listDetailModel = detailModel;//保证首界面又数据
         sectionHeaderViewScroll.modelArr = listItemsDataModel.list;
         return sectionHeaderViewScroll;
     }else{
         FGCollectionReusableView *sectionHeaderView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:headerIdentifier forIndexPath:indexPath];
-        sectionHeaderView.listItemsDataModel = listItemsDataModel;
-        
-        sectionHeaderView.moreBtnClick = ^{
-            //取出选中section的Model
-            ListItemsDataModel *listItemsDataModel = _recommendModel.data[indexPath.section];
-            //传递属性
-            MoreCollectionViewController *moreVC = [[MoreCollectionViewController alloc] initWithCollectionViewLayout:_flowlayout];
-            moreVC.listItemsDataModel = listItemsDataModel;
-            [moreVC.collectionView setBackgroundColor:[UIColor whiteColor]];
-            //navigationController push控制器
-            [weakRecommendVC.navigationController pushViewController:moreVC animated:YES];
-        };
-    return sectionHeaderView;
+        return sectionHeaderView;
     }
 }
 
 #pragma mark 数据请求
+
 - (AFHTTPSessionManager *)sessionManager{
     if (!_sessionManager) {
         //创建manager对象
@@ -234,7 +165,7 @@ static NSString * headerIdentifier2 = @"header2";
 }
 
 - (void)getDateWithUrl:(NSString *)url{
-    __weak FGRecommendCollectionViewController *weakRecommendVC = self;
+    __weak VideoCollectionViewController *weakRecommendVC = self;
     //请求数据
     [self.sessionManager GET:url parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         if ([responseObject isKindOfClass:[NSDictionary class]]) {
@@ -250,13 +181,16 @@ static NSString * headerIdentifier2 = @"header2";
     
 }
 
+
 #pragma mark <UICollectionViewDelegate>//itmes  点击跳转
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     
-   
-   
+    
+    
 }
+
+#pragma mark <UICollectionViewDelegate>
 
 /*
 // Uncomment this method to specify if the specified item should be highlighted during tracking
@@ -270,8 +204,8 @@ static NSString * headerIdentifier2 = @"header2";
 - (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     return YES;
 }
-
 */
+
 /*
 // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
 - (BOOL)collectionView:(UICollectionView *)collectionView shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath {

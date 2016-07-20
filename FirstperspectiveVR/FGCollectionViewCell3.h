@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "RecommenModel3.h"
-#import "VideoModel.h"
+#import "ListDetailModel.h"
+
 
 @interface FGCollectionViewCell3 : UICollectionViewCell
-@property (nonatomic, strong) RecommenModel3 *recommenModel3;
-@property (nonatomic, strong) VideoModel *videoModel;
+@property (nonatomic, strong) ListDetailModel *listDetailModel;
+
 @end

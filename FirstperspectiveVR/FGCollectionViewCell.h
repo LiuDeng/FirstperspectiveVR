@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@class RecommenModel;
+@class ListDetailModel;
 @interface FGCollectionViewCell : UICollectionViewCell
-@property (nonatomic, strong) RecommenModel *recommentModel;
+@property (nonatomic, strong) ListDetailModel *listDetailModel;
 @end

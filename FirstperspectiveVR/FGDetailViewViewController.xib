@@ -7,6 +7,14 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FGDetailViewViewController">
             <connections>
+                <outlet property="definitionLabel" destination="euq-HR-FeF" id="pc4-xX-g7E"/>
+                <outlet property="detailLabel" destination="5WN-yV-eww" id="PNR-0k-0v1"/>
+                <outlet property="downloadButton" destination="lip-jB-Rmn" id="alF-6K-Jox"/>
+                <outlet property="downloadLabel" destination="9kg-hC-VG2" id="Ftg-if-YJS"/>
+                <outlet property="playButton" destination="YMV-Zh-Cif" id="orD-2Q-eVq"/>
+                <outlet property="scrollView" destination="MZp-wq-AHU" id="GPi-Ud-UBy"/>
+                <outlet property="titleLabel" destination="LfA-Eg-iFM" id="lZt-uk-RnW"/>
+                <outlet property="typeLabel" destination="Zzu-7A-9bf" id="fFj-xm-hen"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,12 +23,6 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MZp-wq-AHU">
-                    <rect key="frame" x="10" y="10" width="355" height="200"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="200" id="Sjm-gk-Tp1"/>
-                    </constraints>
-                </scrollView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="天海翼换装秀" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LfA-Eg-iFM">
                     <rect key="frame" x="10" y="247" width="102" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -94,6 +96,12 @@
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MZp-wq-AHU">
+                    <rect key="frame" x="10" y="10" width="355" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="Sjm-gk-Tp1"/>
+                    </constraints>
+                </scrollView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>

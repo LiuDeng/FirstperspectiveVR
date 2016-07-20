@@ -18,16 +18,15 @@
 
 @implementation FGCollectionViewCell3
 
-- (void)setRecommenModel3:(RecommenModel3 *)recommenModel3{
-    _recommenModel3 = recommenModel3;
-    _titleLabel.text = recommenModel3.movie_name;
+
+
+- (void)setListDetailModel:(ListDetailModel *)listDetailModel{
+    _listDetailModel = listDetailModel;
+    NSString *imageUrl = listDetailModel.pic_url;
+    [_imageView sd_setImageWithURL:[NSURL URLWithString:imageUrl] placeholderImage:[UIImage imageNamed:@"social-placeholder"]];
+    _titleLabel.text = listDetailModel.title;
 }
 
-- (void)setVideoModel:(VideoModel *)videoModel{
-    _videoModel = videoModel;
-    NSString *imageurl = videoModel.pic;
-    [_imageView sd_setImageWithURL:[NSURL URLWithString:imageurl] placeholderImage:[UIImage imageNamed:@"social-placeholder"]];
-}
 
 - (void)awakeFromNib {
     [super awakeFromNib];

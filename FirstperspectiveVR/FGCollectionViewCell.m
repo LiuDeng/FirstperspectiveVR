@@ -7,7 +7,7 @@
 //
 
 #import "FGCollectionViewCell.h"
-#import "RecommenModel.h"
+#import "ListDetailModel.h"
 #import "UIImageView+WebCache.h"
 
 @interface FGCollectionViewCell ()
@@ -19,12 +19,12 @@
 
 @implementation FGCollectionViewCell
 
-- (void)setRecommentModel:(RecommenModel *)recommentModel{
-    _recommentModel = recommentModel;
-    NSString *imageUrl = recommentModel.banner_pic_path;
+- (void)setListDetailModel:(ListDetailModel *)listDetailModel{
+    _listDetailModel = listDetailModel;
+    NSString *imageUrl = listDetailModel.pic_url;
     [_imageView sd_setImageWithURL:[NSURL URLWithString:imageUrl] placeholderImage:[UIImage imageNamed:@"social-user"]];
-    _titleLabel.text = recommentModel.banner_title;
-    _subtitleLabel.text = recommentModel.banner_subtitle;
+    _titleLabel.text = listDetailModel.title;
+    _subtitleLabel.text =listDetailModel.subtitle;
 }
 
 - (void)awakeFromNib {
