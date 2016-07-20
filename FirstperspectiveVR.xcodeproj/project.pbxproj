@@ -9,9 +9,24 @@
 /* Begin PBXBuildFile section */
 		0D990D7A7FEC335B15EA4F92 /* libPods-FirstperspectiveVRUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C2A7C8C5B4052504B203D9B /* libPods-FirstperspectiveVRUITests.a */; };
 		61C52B42AB094425313D03A6 /* libPods-FirstperspectiveVR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD4F975CD5F07468F1734407 /* libPods-FirstperspectiveVR.a */; };
+		CC0D64141D3D14C6003C02FA /* FmdbTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0D64131D3D14C6003C02FA /* FmdbTool.m */; };
 		CC355FC21D2FC4DD007ACF6E /* FGRecommendCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC355FC11D2FC4DD007ACF6E /* FGRecommendCollectionViewController.m */; };
 		CC355FC91D2FC9D1007ACF6E /* FGCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC355FC71D2FC9D1007ACF6E /* FGCollectionViewCell.m */; };
 		CC355FCA1D2FC9D1007ACF6E /* FGCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC355FC81D2FC9D1007ACF6E /* FGCollectionViewCell.xib */; };
+
+		CC3AE02A1D371D19009BE50B /* TitleCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3AE0261D371D19009BE50B /* TitleCollectionView.m */; };
+		CC3AE02B1D371D19009BE50B /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3AE0281D371D19009BE50B /* CollectionViewCell.m */; };
+		CC3AE02C1D371D19009BE50B /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC3AE0291D371D19009BE50B /* CollectionViewCell.xib */; };
+		CC3AE0801D37BC58009BE50B /* Main.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC3AE07F1D37BC58009BE50B /* Main.plist */; };
+		CC3AE0821D37BC84009BE50B /* quanjing.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC3AE0811D37BC84009BE50B /* quanjing.plist */; };
+		CC3AE0841D37BE3F009BE50B /* zaixian.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC3AE0831D37BE3F009BE50B /* zaixian.plist */; };
+		CC3AE0861D37BEF7009BE50B /* youxi.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC3AE0851D37BEF7009BE50B /* youxi.plist */; };
+		CC3FBF4A1D3CF18000E34402 /* VDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3FBF491D3CF18000E34402 /* VDataModel.m */; };
+		CC3FBF4D1D3CF19400E34402 /* VModelFirst.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3FBF4C1D3CF19400E34402 /* VModelFirst.m */; };
+		CC3FBF501D3CF88900E34402 /* VAttrsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3FBF4F1D3CF88900E34402 /* VAttrsModel.m */; };
+		CC3FBF561D3CFCA300E34402 /* LandScapeUrlModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3FBF551D3CFCA300E34402 /* LandScapeUrlModel.m */; };
+		CC3FBF5D1D3D000400E34402 /* PlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3FBF5B1D3D000400E34402 /* PlayViewController.m */; };
+		CCA068E41D35D61D00CC448F /* VideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA068E31D35D61D00CC448F /* VideoModel.m */; };
 		CCA068E81D3625D900CC448F /* FGDetailViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA068E61D3625D900CC448F /* FGDetailViewViewController.m */; };
 		CCA068E91D3625D900CC448F /* FGDetailViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCA068E71D3625D900CC448F /* FGDetailViewViewController.xib */; };
 		CCA068F11D390ED600CC448F /* RecommendModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA068F01D390ED600CC448F /* RecommendModel.m */; };
@@ -67,11 +82,36 @@
 		9B33D76DFBAFB8A787381390 /* Pods-FirstperspectiveVRUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstperspectiveVRUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirstperspectiveVRUITests/Pods-FirstperspectiveVRUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9F71712C93753A336648DA3C /* Pods-FirstperspectiveVR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstperspectiveVR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirstperspectiveVR/Pods-FirstperspectiveVR.debug.xcconfig"; sourceTree = "<group>"; };
 		C78CA5281C5465002AE12E96 /* Pods-FirstperspectiveVRUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstperspectiveVRUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirstperspectiveVRUITests/Pods-FirstperspectiveVRUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CC0D64121D3D14C6003C02FA /* FmdbTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FmdbTool.h; sourceTree = "<group>"; };
+		CC0D64131D3D14C6003C02FA /* FmdbTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FmdbTool.m; sourceTree = "<group>"; };
 		CC355FC01D2FC4DD007ACF6E /* FGRecommendCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGRecommendCollectionViewController.h; sourceTree = "<group>"; };
 		CC355FC11D2FC4DD007ACF6E /* FGRecommendCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGRecommendCollectionViewController.m; sourceTree = "<group>"; };
 		CC355FC61D2FC9D1007ACF6E /* FGCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGCollectionViewCell.h; sourceTree = "<group>"; };
 		CC355FC71D2FC9D1007ACF6E /* FGCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGCollectionViewCell.m; sourceTree = "<group>"; };
 		CC355FC81D2FC9D1007ACF6E /* FGCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FGCollectionViewCell.xib; sourceTree = "<group>"; };
+
+		CC3AE0251D371D19009BE50B /* TitleCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleCollectionView.h; sourceTree = "<group>"; };
+		CC3AE0261D371D19009BE50B /* TitleCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleCollectionView.m; sourceTree = "<group>"; };
+		CC3AE0271D371D19009BE50B /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		CC3AE0281D371D19009BE50B /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		CC3AE0291D371D19009BE50B /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		CC3AE07F1D37BC58009BE50B /* Main.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Main.plist; sourceTree = "<group>"; };
+		CC3AE0811D37BC84009BE50B /* quanjing.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = quanjing.plist; sourceTree = "<group>"; };
+		CC3AE0831D37BE3F009BE50B /* zaixian.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = zaixian.plist; sourceTree = "<group>"; };
+		CC3AE0851D37BEF7009BE50B /* youxi.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = youxi.plist; sourceTree = "<group>"; };
+		CC3FBF481D3CF18000E34402 /* VDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDataModel.h; sourceTree = "<group>"; };
+		CC3FBF491D3CF18000E34402 /* VDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDataModel.m; sourceTree = "<group>"; };
+		CC3FBF4B1D3CF19400E34402 /* VModelFirst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VModelFirst.h; sourceTree = "<group>"; };
+		CC3FBF4C1D3CF19400E34402 /* VModelFirst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VModelFirst.m; sourceTree = "<group>"; };
+		CC3FBF4E1D3CF88900E34402 /* VAttrsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAttrsModel.h; sourceTree = "<group>"; };
+		CC3FBF4F1D3CF88900E34402 /* VAttrsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAttrsModel.m; sourceTree = "<group>"; };
+		CC3FBF541D3CFCA300E34402 /* LandScapeUrlModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandScapeUrlModel.h; sourceTree = "<group>"; };
+		CC3FBF551D3CFCA300E34402 /* LandScapeUrlModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandScapeUrlModel.m; sourceTree = "<group>"; };
+		CC3FBF5A1D3D000400E34402 /* PlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayViewController.h; sourceTree = "<group>"; };
+		CC3FBF5B1D3D000400E34402 /* PlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayViewController.m; sourceTree = "<group>"; };
+		CCA068E21D35D61D00CC448F /* VideoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoModel.h; sourceTree = "<group>"; };
+		CCA068E31D35D61D00CC448F /* VideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoModel.m; sourceTree = "<group>"; };
+
 		CCA068E51D3625D900CC448F /* FGDetailViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGDetailViewViewController.h; sourceTree = "<group>"; };
 		CCA068E61D3625D900CC448F /* FGDetailViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGDetailViewViewController.m; sourceTree = "<group>"; };
 		CCA068E71D3625D900CC448F /* FGDetailViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FGDetailViewViewController.xib; sourceTree = "<group>"; };
@@ -161,9 +201,23 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		CC0D64111D3D14AD003C02FA /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				CC0D64121D3D14C6003C02FA /* FmdbTool.h */,
+				CC0D64131D3D14C6003C02FA /* FmdbTool.m */,
+			);
+			name = FMDB;
+			sourceTree = "<group>";
+		};
 		CC355FBF1D2F36DB007ACF6E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CC3AE0251D371D19009BE50B /* TitleCollectionView.h */,
+				CC3AE0261D371D19009BE50B /* TitleCollectionView.m */,
+				CC3AE0271D371D19009BE50B /* CollectionViewCell.h */,
+				CC3AE0281D371D19009BE50B /* CollectionViewCell.m */,
+				CC3AE0291D371D19009BE50B /* CollectionViewCell.xib */,
 				CC355FC61D2FC9D1007ACF6E /* FGCollectionViewCell.h */,
 				CC355FC71D2FC9D1007ACF6E /* FGCollectionViewCell.m */,
 				CC355FC81D2FC9D1007ACF6E /* FGCollectionViewCell.xib */,
@@ -222,6 +276,7 @@
 		CCE692C51D25F77600AE5171 /* FirstperspectiveVR */ = {
 			isa = PBXGroup;
 			children = (
+				CC0D64111D3D14AD003C02FA /* FMDB */,
 				CC355FBF1D2F36DB007ACF6E /* Views */,
 				CCE692FB1D25F87B00AE5171 /* M */,
 				CCE692F91D25F86900AE5171 /* C */,
@@ -271,6 +326,12 @@
 				CCE692FC1D25FCEF00AE5171 /* Recommend */,
 				CCE693031D26006E00AE5171 /* Channel */,
 				CCE693041D26009400AE5171 /* Local */,
+
+				CCE693001D25FD3A00AE5171 /* MainTabBarVC.h */,
+				CCE693011D25FD3A00AE5171 /* MainTabBarVC.m */,
+				CC3FBF5A1D3D000400E34402 /* PlayViewController.h */,
+				CC3FBF5B1D3D000400E34402 /* PlayViewController.m */,
+
 			);
 			name = C;
 			sourceTree = "<group>";
@@ -278,6 +339,10 @@
 		CCE692FA1D25F87100AE5171 /* 千万不能碰 */ = {
 			isa = PBXGroup;
 			children = (
+				CC3AE07F1D37BC58009BE50B /* Main.plist */,
+				CC3AE0811D37BC84009BE50B /* quanjing.plist */,
+				CC3AE0831D37BE3F009BE50B /* zaixian.plist */,
+				CC3AE0851D37BEF7009BE50B /* youxi.plist */,
 				CCE692CF1D25F77600AE5171 /* Main.storyboard */,
 			);
 			name = "千万不能碰";
@@ -286,7 +351,29 @@
 		CCE692FB1D25F87B00AE5171 /* M */ = {
 			isa = PBXGroup;
 			children = (
+
 				CCA068EE1D390E4900CC448F /* New Group1 */,
+
+				CCF8A3481D2D262700255967 /* RecommenModel.h */,
+				CCF8A3491D2D262700255967 /* RecommenModel.m */,
+				CCF8A34B1D2D29B600255967 /* RecommenModel2.h */,
+				CCF8A34C1D2D29B600255967 /* RecommenModel2.m */,
+				CCF8A34E1D2D317B00255967 /* RecommenModel3.h */,
+				CCF8A34F1D2D317B00255967 /* RecommenModel3.m */,
+				CCA068E21D35D61D00CC448F /* VideoModel.h */,
+				CCA068E31D35D61D00CC448F /* VideoModel.m */,
+				CCF8A3511D2D33C400255967 /* Key.h */,
+				CCA4EEE61D33CD1900978705 /* FGUrlDate.h */,
+				CCA4EEE71D33CD1900978705 /* FGUrlDate.m */,
+				CC3FBF4B1D3CF19400E34402 /* VModelFirst.h */,
+				CC3FBF4C1D3CF19400E34402 /* VModelFirst.m */,
+				CC3FBF481D3CF18000E34402 /* VDataModel.h */,
+				CC3FBF491D3CF18000E34402 /* VDataModel.m */,
+				CC3FBF4E1D3CF88900E34402 /* VAttrsModel.h */,
+				CC3FBF4F1D3CF88900E34402 /* VAttrsModel.m */,
+				CC3FBF541D3CFCA300E34402 /* LandScapeUrlModel.h */,
+				CC3FBF551D3CFCA300E34402 /* LandScapeUrlModel.m */,
+
 			);
 			name = M;
 			sourceTree = "<group>";
@@ -408,6 +495,7 @@
 				TargetAttributes = {
 					CCE692C21D25F77600AE5171 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = DSW48G58Q5;
 					};
 					CCE692DB1D25F77600AE5171 = {
 						CreatedOnToolsVersion = 7.3;
@@ -447,13 +535,21 @@
 				CCA4EEE31D33C0C500978705 /* cell in Resources */,
 				CCA4EED71D332BCC00978705 /* FGCollectionViewCell3.xib in Resources */,
 				CCE692D61D25F77600AE5171 /* LaunchScreen.storyboard in Resources */,
+				CC3AE0821D37BC84009BE50B /* quanjing.plist in Resources */,
 				CCF8A3921D2E7D9D00255967 /* Main2.storyboard in Resources */,
 				CCA4EEE11D338D8400978705 /* FGCollectionReusableView2.xib in Resources */,
+
+				CC3AE02C1D371D19009BE50B /* CollectionViewCell.xib in Resources */,
+				CCA4EED21D332ABD00978705 /* FGCollectionViewCell2.xib in Resources */,
+
 				CCA4EEDC1D33898900978705 /* FGCollectionReusableView.xib in Resources */,
+				CC3AE0801D37BC58009BE50B /* Main.plist in Resources */,
 				CC355FCA1D2FC9D1007ACF6E /* FGCollectionViewCell.xib in Resources */,
+				CC3AE0841D37BE3F009BE50B /* zaixian.plist in Resources */,
 				CCE692D31D25F77600AE5171 /* Assets.xcassets in Resources */,
 				CCA068FF1D3CB77A00CC448F /* FGCollectionViewCell2.xib in Resources */,
 				CCA068E91D3625D900CC448F /* FGDetailViewViewController.xib in Resources */,
+				CC3AE0861D37BEF7009BE50B /* youxi.plist in Resources */,
 				CCE692D11D25F77600AE5171 /* Main.storyboard in Resources */,
 				CCA4EEEC1D35093E00978705 /* social-placeholder@3x.png in Resources */,
 			);
@@ -607,17 +703,36 @@
 				CCA068E81D3625D900CC448F /* FGDetailViewViewController.m in Sources */,
 				CCA4EED61D332BCC00978705 /* FGCollectionViewCell3.m in Sources */,
 				CC355FC91D2FC9D1007ACF6E /* FGCollectionViewCell.m in Sources */,
+				CC3FBF5D1D3D000400E34402 /* PlayViewController.m in Sources */,
 				CCE692CB1D25F77600AE5171 /* AppDelegate.m in Sources */,
+
 				CCA068FA1D3915EC00CC448F /* ListDetailModel.m in Sources */,
 				CCA069211D3F1B0300CC448F /* MoreCollectionViewController.m in Sources */,
 				CCA068F11D390ED600CC448F /* RecommendModel.m in Sources */,
 				CCA069101D3CF68200CC448F /* VideoViewController.m in Sources */,
 				CCA068FE1D3CB77A00CC448F /* FGCollectionViewCell2.m in Sources */,
+
+				CC3AE02B1D371D19009BE50B /* CollectionViewCell.m in Sources */,
+				CC3FBF561D3CFCA300E34402 /* LandScapeUrlModel.m in Sources */,
+				CC3AE02A1D371D19009BE50B /* TitleCollectionView.m in Sources */,
+				CCE693071D2600F100AE5171 /* LocalTableVC.m in Sources */,
+				CC3FBF4A1D3CF18000E34402 /* VDataModel.m in Sources */,
+
 				CCE692C81D25F77600AE5171 /* main.m in Sources */,
 				CC355FC21D2FC4DD007ACF6E /* FGRecommendCollectionViewController.m in Sources */,
+
 				CCA068F71D39122000CC448F /* ListItemsDataModel.m in Sources */,
 				CCA4EEE01D338D8400978705 /* FGCollectionReusableView2.m in Sources */,
 				CCA0691E1D3CFAA900CC448F /* VideoCollectionViewController.m in Sources */,
+
+				CCF8A34D1D2D29B600255967 /* RecommenModel2.m in Sources */,
+				CC3FBF501D3CF88900E34402 /* VAttrsModel.m in Sources */,
+				CCA068E41D35D61D00CC448F /* VideoModel.m in Sources */,
+				CCA4EEE01D338D8400978705 /* FGCollectionReusableView2.m in Sources */,
+				CC0D64141D3D14C6003C02FA /* FmdbTool.m in Sources */,
+				CCA4EED11D332ABD00978705 /* FGCollectionViewCell2.m in Sources */,
+				CC3FBF4D1D3CF19400E34402 /* VModelFirst.m in Sources */,
+				CCE693021D25FD3A00AE5171 /* MainTabBarVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -761,10 +876,15 @@
 			baseConfigurationReference = 9F71712C93753A336648DA3C /* Pods-FirstperspectiveVR.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = FirstperspectiveVR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.firstperspectiveVR.www.FirstperspectiveVR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -773,10 +893,15 @@
 			baseConfigurationReference = 48521F8C2CD0B64AB194B88E /* Pods-FirstperspectiveVR.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = FirstperspectiveVR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.firstperspectiveVR.www.FirstperspectiveVR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

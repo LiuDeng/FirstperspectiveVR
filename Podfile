@@ -6,6 +6,7 @@ pod 'AFNetworking'
 pod 'GVRSDK'
 pod 'SDWebImage'
 pod 'Masonry'
+pod 'FMDB'
   # Uncomment this line if you're using Swift or would like to use dynamic frameworks
   # use_frameworks!
 
