@@ -8,12 +8,13 @@
 
 #import "FmdbTool.h"
 #import "FMDB.h"
-#import "TextModel.h"
+#import "VModelFirst.h"
 #define KDBNAME @"datas.db"
 @interface FmdbTool()
 @property(nonatomic,strong)FMDatabase *base;
 @end
 @implementation FmdbTool
+#if 0
 //懒加载
 -(FMDatabase *)base{
     if(_base)return _base;
@@ -109,6 +110,6 @@
     
     return mode;
 }
-
+#endif
 
 @end

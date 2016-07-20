@@ -7,6 +7,7 @@
 //
 
 #import "VModelFirst.h"
+#import "VDataModel.h"
 //@property(nonatomic,strong)NSString* status;
 //@property(nonatomic,strong)NSString* status_msg;
 //@property(nonatomic,strong)NSString* version;

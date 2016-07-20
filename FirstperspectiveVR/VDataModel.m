@@ -5,7 +5,7 @@
 //  Created by qingyun on 16/7/18.
 //  Copyright © 2016年 qingyun. All rights reserved.
 //
-#import "VAttrsModel.h"
+
 #import "VDataModel.h"
 #import "LandScapeUrlModel.h"
 //@property(nonatomic,strong)NSString* payment_count;

@@ -12,14 +12,20 @@
 #import "AFNetworking.h"
 #import "SDImageCache.h"
 #import "FmdbTool.h"
+
+//#import "VAttrsModel.m"
+#import "VDataModel.h"
+
 @interface PlayViewController ()<GVRVideoViewDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @property (weak, nonatomic) IBOutlet UILabel *sizeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *descLabel;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
 @property (weak, nonatomic) IBOutlet GVRVideoView *playerView;
 @property (nonatomic, strong)AFHTTPSessionManager* myManager;
 @property (nonatomic,strong) VModelFirst *model;
+@property (nonatomic, strong) NSString *currentPlayUrl;
 @end
 
 @implementation PlayViewController
@@ -46,8 +52,30 @@ BOOL _isPaused;
     return _myManager;
 }
 -(VModelFirst *)model{
-    [self.myManager GET:_Url parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [self.myManager GET:@"http://res.static.mojing.cn/160630-1-1-1/ios/zh/1/detail/445519.js" parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSLog(@"%@",responseObject);
+        _model=[VModelFirst ModelWithDictionary:responseObject];
+        NSArray *tempArr = _model.data.video_attrs;
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [_segmentedControl removeAllSegments];
+            self.titleLabel.text=_model.data.title;
+            self.scoreLabel.text=_model.data.score;
+            self.descLabel.text=_model.data.desc;
+            for (int i=0; i<tempArr.count; i++) {
+                VAttrsModel *model = tempArr[i];
+                [_segmentedControl insertSegmentWithTitle:model.definition_name atIndex:0 animated:NO];
+            }
+            [_segmentedControl setSelectedSegmentIndex:tempArr.count-1];
+            VAttrsModel* model=_model.data.video_attrs[_segmentedControl.selectedSegmentIndex];
+            self.sizeLabel.text=model.size;
+            _currentPlayUrl = model.play_url;
+        });
+        
+
+        
+        
+        
+        
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"网络获取错误》》》》%@",error);
@@ -56,11 +84,16 @@ BOOL _isPaused;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+
     // Do any additional setup after loading the view from its nib.
     _playerView.delegate = self;
     _playerView.enableFullscreenButton = YES;
     _playerView.enableCardboardButton = YES;
      _isPaused = NO;
+    _model=[self model];
+    
+    
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -69,9 +102,27 @@ BOOL _isPaused;
 - (IBAction)downloadBtn:(UIButton *)sender {
 }
 - (IBAction)playBtn:(UIButton *)sender {
-    [_playerView loadFromUrl:[NSURL URLWithString:@"http://dl.mojing.cn/xianchang/160707/1467865137_37_3840HD.mp4"]];
+//    NSString *videoPath = [[NSBundle mainBundle] pathForResource:@"congo" ofType:@"mp4"];
+    
+//    [_playerView loadFromUrl:[[NSURL alloc] initFileURLWithPath:@"/Users/qingyun/Desktop/晋民政/FirstperspectiveVR/FirstperspectiveVR/congo.mp4"]];
+    [_playerView loadFromUrl:[NSURL URLWithString:_currentPlayUrl]];
 }
 - (IBAction)clarityButton:(UISegmentedControl *)sender {
+//    UISegmentedControlSegment *se = ];
+    VAttrsModel* model=_model.data.video_attrs[sender.selectedSegmentIndex];
+    
+    self.descLabel.text=_model.data.desc;
+    _currentPlayUrl = model.play_url;
+    
+//    for (int  i=0; i<sender.numberOfSegments; i++) {
+//        VAttrsModel* model=_model.data.video_attrs[i];
+//        if (i == sender.selectedSegmentIndex) {
+//            NSLog(@"%@",model.definition_name);
+//        }
+//    }
+    
+    
+    
 }
 #pragma mark - GVRVideoViewDelegate
 
@@ -105,8 +156,8 @@ didFailToLoadContent:(id)content
     // Loop the video when it reaches the end.
 //    _slider.value = position;
     if (position == videoView.duration) {
-        [_playerView seekTo:0];
-        [_playerView resume];
+//        [_playerView seekTo:0];
+        [_playerView stop ];
     }
     //[_videoView seekTo:position];
 }

@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "VDataModel.h"
+@class VDataModel;
 @interface VModelFirst : NSObject
 @property(nonatomic,strong)NSString* status;
 @property(nonatomic,strong)NSString* status_msg;

@@ -25,7 +25,6 @@
 		CC3FBF501D3CF88900E34402 /* VAttrsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3FBF4F1D3CF88900E34402 /* VAttrsModel.m */; };
 		CC3FBF561D3CFCA300E34402 /* LandScapeUrlModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3FBF551D3CFCA300E34402 /* LandScapeUrlModel.m */; };
 		CC3FBF5D1D3D000400E34402 /* PlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3FBF5B1D3D000400E34402 /* PlayViewController.m */; };
-		CC3FBF5E1D3D000400E34402 /* PlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC3FBF5C1D3D000400E34402 /* PlayViewController.xib */; };
 		CCA068E41D35D61D00CC448F /* VideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA068E31D35D61D00CC448F /* VideoModel.m */; };
 		CCA068E81D3625D900CC448F /* FGDetailViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA068E61D3625D900CC448F /* FGDetailViewViewController.m */; };
 		CCA068E91D3625D900CC448F /* FGDetailViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCA068E71D3625D900CC448F /* FGDetailViewViewController.xib */; };
@@ -108,7 +107,6 @@
 		CC3FBF551D3CFCA300E34402 /* LandScapeUrlModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandScapeUrlModel.m; sourceTree = "<group>"; };
 		CC3FBF5A1D3D000400E34402 /* PlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayViewController.h; sourceTree = "<group>"; };
 		CC3FBF5B1D3D000400E34402 /* PlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayViewController.m; sourceTree = "<group>"; };
-		CC3FBF5C1D3D000400E34402 /* PlayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayViewController.xib; sourceTree = "<group>"; };
 		CCA068E21D35D61D00CC448F /* VideoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoModel.h; sourceTree = "<group>"; };
 		CCA068E31D35D61D00CC448F /* VideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoModel.m; sourceTree = "<group>"; };
 		CCA068E51D3625D900CC448F /* FGDetailViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGDetailViewViewController.h; sourceTree = "<group>"; };
@@ -130,6 +128,7 @@
 		CCA4EEE61D33CD1900978705 /* FGUrlDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGUrlDate.h; sourceTree = "<group>"; };
 		CCA4EEE71D33CD1900978705 /* FGUrlDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGUrlDate.m; sourceTree = "<group>"; };
 		CCA4EEEB1D35093E00978705 /* social-placeholder@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "social-placeholder@3x.png"; path = "cell/social-placeholder.imageset/social-placeholder@3x.png"; sourceTree = "<group>"; };
+		CCB62D421D3E4C9B00A4EC60 /* congo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = congo.mp4; sourceTree = "<group>"; };
 		CCE692C31D25F77600AE5171 /* FirstperspectiveVR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstperspectiveVR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCE692C71D25F77600AE5171 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CCE692C91D25F77600AE5171 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -276,6 +275,7 @@
 		CCE692C61D25F77600AE5171 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CCB62D421D3E4C9B00A4EC60 /* congo.mp4 */,
 				CCA4EEEB1D35093E00978705 /* social-placeholder@3x.png */,
 				CCA4EEE21D33C0C500978705 /* cell */,
 				CCF8A3911D2E7D9D00255967 /* Main2.storyboard */,
@@ -318,7 +318,6 @@
 				CCE693011D25FD3A00AE5171 /* MainTabBarVC.m */,
 				CC3FBF5A1D3D000400E34402 /* PlayViewController.h */,
 				CC3FBF5B1D3D000400E34402 /* PlayViewController.m */,
-				CC3FBF5C1D3D000400E34402 /* PlayViewController.xib */,
 			);
 			name = C;
 			sourceTree = "<group>";
@@ -471,6 +470,7 @@
 				TargetAttributes = {
 					CCE692C21D25F77600AE5171 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = DSW48G58Q5;
 					};
 					CCE692DB1D25F77600AE5171 = {
 						CreatedOnToolsVersion = 7.3;
@@ -509,7 +509,6 @@
 			files = (
 				CCA4EEE31D33C0C500978705 /* cell in Resources */,
 				CCA4EED71D332BCC00978705 /* FGCollectionViewCell3.xib in Resources */,
-				CC3FBF5E1D3D000400E34402 /* PlayViewController.xib in Resources */,
 				CCE692D61D25F77600AE5171 /* LaunchScreen.storyboard in Resources */,
 				CC3AE0821D37BC84009BE50B /* quanjing.plist in Resources */,
 				CCF8A3921D2E7D9D00255967 /* Main2.storyboard in Resources */,
@@ -839,10 +838,14 @@
 			baseConfigurationReference = 9F71712C93753A336648DA3C /* Pods-FirstperspectiveVR.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = FirstperspectiveVR/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.firstperspectiveVR.www.FirstperspectiveVR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -851,10 +854,14 @@
 			baseConfigurationReference = 48521F8C2CD0B64AB194B88E /* Pods-FirstperspectiveVR.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = FirstperspectiveVR/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.firstperspectiveVR.www.FirstperspectiveVR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

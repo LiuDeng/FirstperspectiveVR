@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 @class LandScapeUrlModel;
+#import "VAttrsModel.h"
 //payment_count	String	0.0
 //operation_type	String	3
 //video_attrs	Array
