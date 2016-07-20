@@ -128,7 +128,6 @@
 		CCA4EEE61D33CD1900978705 /* FGUrlDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGUrlDate.h; sourceTree = "<group>"; };
 		CCA4EEE71D33CD1900978705 /* FGUrlDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGUrlDate.m; sourceTree = "<group>"; };
 		CCA4EEEB1D35093E00978705 /* social-placeholder@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "social-placeholder@3x.png"; path = "cell/social-placeholder.imageset/social-placeholder@3x.png"; sourceTree = "<group>"; };
-		CCB62D421D3E4C9B00A4EC60 /* congo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = congo.mp4; sourceTree = "<group>"; };
 		CCE692C31D25F77600AE5171 /* FirstperspectiveVR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstperspectiveVR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCE692C71D25F77600AE5171 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CCE692C91D25F77600AE5171 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -275,7 +274,6 @@
 		CCE692C61D25F77600AE5171 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CCB62D421D3E4C9B00A4EC60 /* congo.mp4 */,
 				CCA4EEEB1D35093E00978705 /* social-placeholder@3x.png */,
 				CCA4EEE21D33C0C500978705 /* cell */,
 				CCF8A3911D2E7D9D00255967 /* Main2.storyboard */,
@@ -842,6 +840,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = FirstperspectiveVR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.firstperspectiveVR.www.FirstperspectiveVR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -858,6 +857,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = FirstperspectiveVR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.firstperspectiveVR.www.FirstperspectiveVR;
 				PRODUCT_NAME = "$(TARGET_NAME)";

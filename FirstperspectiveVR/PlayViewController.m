@@ -10,13 +10,14 @@
 #import "GVRVideoView.h"
 #import "VModelFirst.h"
 #import "AFNetworking.h"
-#import "SDImageCache.h"
+#import "UIImageView+WebCache.h"
 #import "FmdbTool.h"
 
 //#import "VAttrsModel.m"
 #import "VDataModel.h"
 
 @interface PlayViewController ()<GVRVideoViewDelegate>
+@property (weak, nonatomic) IBOutlet UIImageView *titleImage;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @property (weak, nonatomic) IBOutlet UILabel *sizeLabel;
@@ -61,11 +62,12 @@ BOOL _isPaused;
             self.titleLabel.text=_model.data.title;
             self.scoreLabel.text=_model.data.score;
             self.descLabel.text=_model.data.desc;
+            [_titleImage sd_setImageWithURL:_model.data.thumb_pic_url.firstObject];
             for (int i=0; i<tempArr.count; i++) {
                 VAttrsModel *model = tempArr[i];
-                [_segmentedControl insertSegmentWithTitle:model.definition_name atIndex:0 animated:NO];
+                [_segmentedControl insertSegmentWithTitle:model.definition_name atIndex:i animated:NO];
             }
-            [_segmentedControl setSelectedSegmentIndex:tempArr.count-1];
+            [_segmentedControl setSelectedSegmentIndex:0];
             VAttrsModel* model=_model.data.video_attrs[_segmentedControl.selectedSegmentIndex];
             self.sizeLabel.text=model.size;
             _currentPlayUrl = model.play_url;
@@ -92,8 +94,6 @@ BOOL _isPaused;
     _playerView.enableCardboardButton = YES;
      _isPaused = NO;
     _model=[self model];
-    
-    
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -102,17 +102,18 @@ BOOL _isPaused;
 - (IBAction)downloadBtn:(UIButton *)sender {
 }
 - (IBAction)playBtn:(UIButton *)sender {
-//    NSString *videoPath = [[NSBundle mainBundle] pathForResource:@"congo" ofType:@"mp4"];
-    
-//    [_playerView loadFromUrl:[[NSURL alloc] initFileURLWithPath:@"/Users/qingyun/Desktop/晋民政/FirstperspectiveVR/FirstperspectiveVR/congo.mp4"]];
+    [self.view bringSubviewToFront:_playerView];
+
     [_playerView loadFromUrl:[NSURL URLWithString:_currentPlayUrl]];
 }
 - (IBAction)clarityButton:(UISegmentedControl *)sender {
 //    UISegmentedControlSegment *se = ];
     VAttrsModel* model=_model.data.video_attrs[sender.selectedSegmentIndex];
     
-    self.descLabel.text=_model.data.desc;
+    self.sizeLabel.text=model.size;
     _currentPlayUrl = model.play_url;
+
+//    [self.view ]
     
 //    for (int  i=0; i<sender.numberOfSegments; i++) {
 //        VAttrsModel* model=_model.data.video_attrs[i];
@@ -158,8 +159,10 @@ didFailToLoadContent:(id)content
     if (position == videoView.duration) {
 //        [_playerView seekTo:0];
         [_playerView stop ];
+        [self.view bringSubviewToFront:_titleImage];
     }
     //[_videoView seekTo:position];
+    
 }
 
 
