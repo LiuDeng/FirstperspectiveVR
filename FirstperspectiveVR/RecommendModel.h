@@ -17,6 +17,7 @@
 @property (nonatomic, strong) NSString *language;//	String	zh
 @property (nonatomic, strong) NSString *data_type;//	String	1
 @property (nonatomic, strong) NSArray *data;//	Object
+@property (nonatomic) BOOL way;
 
 + (instancetype) recommendModelWithDictionary :(NSDictionary *)dict;
 - (instancetype) initWithDictionary :(NSDictionary *)dict;

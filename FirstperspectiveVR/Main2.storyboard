@@ -10,7 +10,7 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Azs-Qd-2Qf" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="fgn-dF-bio">
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="fgn-dF-bio">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
@@ -51,7 +51,7 @@
                         <viewControllerLayoutGuide type="bottom" id="88Q-IQ-qAE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="UPJ-SY-UbX">
-                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -69,7 +69,7 @@
             <objects>
                 <collectionViewController id="nnP-CH-vcG" userLabel="推荐" customClass="FGRecommendCollectionViewController" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="yDJ-cE-XHf">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="doq-Ey-Fsk">
                             <size key="itemSize" width="50" height="50"/>

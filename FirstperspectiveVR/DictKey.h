@@ -11,6 +11,7 @@
 
 
 // --------------- RecommendModel
+static NSString *KWay = @"way";
 static NSString *KStatus =  @"status";
 static NSString *KStatus_msg = @"status_msg";
 static NSString *KVersion = @"version";

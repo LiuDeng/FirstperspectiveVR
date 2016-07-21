@@ -53,7 +53,7 @@ BOOL _isPaused;
     return _myManager;
 }
 -(VModelFirst *)model{
-    [self.myManager GET:@"http://res.static.mojing.cn/160630-1-1-1/ios/zh/1/detail/445519.js" parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [self.myManager GET:_Url parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSLog(@"%@",responseObject);
         _model=[VModelFirst ModelWithDictionary:responseObject];
         NSArray *tempArr = _model.data.video_attrs;

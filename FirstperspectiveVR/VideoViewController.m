@@ -15,10 +15,7 @@
 @interface VideoViewController ()<UIPageViewControllerDelegate,UIPageViewControllerDataSource>
 @property (nonatomic, strong) UIPageViewController *pageViewController;
 @property (nonatomic)NSInteger page;
-@property (nonatomic, strong) VideoCollectionViewController *videoCollerctionViewControllerVR;
-@property (nonatomic, strong) VideoCollectionViewController *videoCollerctionViewController2D;
-@property (nonatomic, strong) VideoCollectionViewController *videoCollerctionViewController3D;
-@property (nonatomic, strong) VideoCollectionViewController *videoCollerctionViewControllerZB;
+
 @end
 
 @implementation VideoViewController

@@ -33,25 +33,10 @@ static NSString * reuseIdentifier3 = @"Cell3";
     [self getDateWithUrl:urlStr];
     
     self.collectionView.backgroundColor = [UIColor whiteColor];
-    //创建一个laout对象
-//    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc]init];
-//    
-//    flowLayout.minimumLineSpacing = 10.0;//行间距
-//    flowLayout.minimumInteritemSpacing = 0.0;//itme间距
-//    //section的头尾size,scrollDirection为垂直,Size中的高度起作用;scrollDirection为水平,Size中的宽度起作用
-//    //    flowLayout.headerReferenceSize = CGSizeMake(30, 30);
-//    //    flowLayout.footerReferenceSize = CGSizeMake(30, 30);
-//    flowLayout.sectionInset = UIEdgeInsetsMake(0, 10, 0, 10);//sectionInset边距
-//    //设置section头视图悬浮
-//    flowLayout.sectionHeadersPinToVisibleBounds = NO;
-//    UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:self.collectionView.frame collectionViewLayout:flowLayout];
-//    [collectionView setBackgroundColor:[UIColor whiteColor]];
-//    
-//    self.collectionView = collectionView;
-    
     [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([FGCollectionViewCell class]) bundle:nil] forCellWithReuseIdentifier:reuseIdentifier];
     
     [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([FGCollectionViewCell3 class]) bundle:nil] forCellWithReuseIdentifier:reuseIdentifier3];
+    
     // Do any additional setup after loading the view.
 }
 
@@ -70,7 +55,7 @@ static NSString * reuseIdentifier3 = @"Cell3";
         itemSize = CGSizeMake((VIEWW-30)/2, 140);
         return itemSize;
     }else{
-        itemSize = CGSizeMake((VIEWW - 40)/3, 150);
+        itemSize = CGSizeMake((VIEWW - 40)/3, 160);
         return itemSize;
     }
     
@@ -131,11 +116,18 @@ static NSString * reuseIdentifier3 = @"Cell3";
     //请求数据
     [self.sessionManager GET:url parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         if ([responseObject isKindOfClass:[NSDictionary class]]) {
-            _recommendModel = [RecommendModel recommendModelWithDictionary:responseObject];
+            
+            NSMutableDictionary *Mdict = [NSMutableDictionary dictionaryWithDictionary:responseObject];
+            [Mdict setObject:@(YES) forKey:@"way"];
+            _recommendModel = [RecommendModel recommendModelWithDictionary:Mdict];
+            ListItemsDataModel *listItemsDataModel = _recommendModel.data[0];
+            
+            [weakRecommendVC.navigationController.navigationItem setTitle:listItemsDataModel.title];
             
         }
         dispatch_async(dispatch_get_main_queue(), ^{
             [weakRecommendVC.collectionView reloadData];
+            
         });
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"--==--%@",error);//输出错误信息

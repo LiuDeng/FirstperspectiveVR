@@ -20,6 +20,7 @@
 #import "ListDetailModel.h"
 #import "FGDetailViewViewController.h"
 #import "MoreCollectionViewController.h"
+#import "PlayViewController.h"
 
 #define VIEWW [UIScreen mainScreen].bounds.size.width
 
@@ -29,7 +30,7 @@
 @property (nonatomic, strong) NSArray *modelArr;
 @property (nonatomic, strong) RecommendModel *recommendModel;
 @property (nonatomic, strong) FGUrlDate *fgUrlDate;
-@property(nonatomic, strong) UICollectionViewFlowLayout *flowlayout;
+
 
 @end
 
@@ -48,19 +49,12 @@ static NSString * headerIdentifier2 = @"header2";
     NSString *urlStr = @"http://res.static.mojing.cn/160630-1-1-1/ios/zh/1/page/443512.js";
     [self getDateWithUrl:urlStr];
     //请求第4组嵌套数据
-    self.collectionView.backgroundColor = [UIColor whiteColor];
+    self.collectionView.backgroundColor = [UIColor lightGrayColor];
+    [self.collectionView setAlpha:0.05];
     //创建一个laout对象
-    _flowlayout = [[UICollectionViewFlowLayout alloc] init];
-    _flowlayout.minimumLineSpacing = 10.0;//行间距
-    _flowlayout.minimumInteritemSpacing = 10.0;//itme间距
-    //section的头尾size,scrollDirection为垂直,Size中的高度起作用;scrollDirection为水平,Size中的宽度起作用
-//    flowLayout.headerReferenceSize = CGSizeMake(30, 30);
-//    flowLayout.footerReferenceSize = CGSizeMake(30, 30);
-    _flowlayout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);//sectionInset边距
-    //设置section头视图悬浮
-    _flowlayout.sectionHeadersPinToVisibleBounds = NO;
+    
 //    flowLayout.estimatedItemSize = CGSizeMake(50, 100);
-    UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:self.collectionView.frame collectionViewLayout:_flowlayout];
+    UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:self.collectionView.frame collectionViewLayout:[self crateFlowLayout]];
     [collectionView setBackgroundColor:[UIColor whiteColor]];
     
     self.collectionView = collectionView;
@@ -70,6 +64,20 @@ static NSString * headerIdentifier2 = @"header2";
     [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([FGCollectionReusableView class]) bundle:nil] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:headerIdentifier];
     [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([FGCollectionReusableView2 class]) bundle:nil] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:headerIdentifier2];
     
+}
+
+- (UICollectionViewFlowLayout*)crateFlowLayout{
+    
+    UICollectionViewFlowLayout *flowlayout = [[UICollectionViewFlowLayout alloc] init];
+    flowlayout.minimumLineSpacing = 10.0;//行间距
+    flowlayout.minimumInteritemSpacing = 10.0;//itme间距
+    //section的头尾size,scrollDirection为垂直,Size中的高度起作用;scrollDirection为水平,Size中的宽度起作用
+    //    flowLayout.headerReferenceSize = CGSizeMake(30, 30);
+    //    flowLayout.footerReferenceSize = CGSizeMake(30, 30);
+    flowlayout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);//sectionInset边距
+    //设置section头视图悬浮
+    flowlayout.sectionHeadersPinToVisibleBounds = NO;
+    return flowlayout;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -196,13 +204,14 @@ static NSString * headerIdentifier2 = @"header2";
         return sectionHeaderViewScroll;
     }else{
         FGCollectionReusableView *sectionHeaderView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:headerIdentifier forIndexPath:indexPath];
+        ListItemsDataModel *listItemsDataModel = _recommendModel.data[indexPath.section+1];
         sectionHeaderView.listItemsDataModel = listItemsDataModel;
         
         sectionHeaderView.moreBtnClick = ^{
             //取出选中section的Model
             ListItemsDataModel *listItemsDataModel = _recommendModel.data[indexPath.section];
             //传递属性
-            MoreCollectionViewController *moreVC = [[MoreCollectionViewController alloc] initWithCollectionViewLayout:_flowlayout];
+            MoreCollectionViewController *moreVC = [[MoreCollectionViewController alloc] initWithCollectionViewLayout:[weakRecommendVC crateFlowLayout]];
             moreVC.listItemsDataModel = listItemsDataModel;
             [moreVC.collectionView setBackgroundColor:[UIColor whiteColor]];
             //navigationController push控制器
@@ -253,8 +262,13 @@ static NSString * headerIdentifier2 = @"header2";
 #pragma mark <UICollectionViewDelegate>//itmes  点击跳转
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    
-   
+//    UIStoryboard *sb2 = [UIStoryboard storyboardWithName:<#(nonnull NSString *)#> bundle:<#(nullable NSBundle *)#>];
+    PlayViewController *playViewController = [[PlayViewController alloc] init];
+    ListItemsDataModel *listItemsDataModel = _recommendModel.data[indexPath.section+1];
+    ListDetailModel *listDetailModel = listItemsDataModel.list[indexPath.row];
+    NSString *urlStr = [NSString stringWithFormat:@"http://res.static.mojing.cn/160630-1-1-1/ios/zh/%@",listDetailModel.url];
+    playViewController.Url = urlStr;
+    [self.navigationController pushViewController:playViewController animated:YES];
    
 }
 

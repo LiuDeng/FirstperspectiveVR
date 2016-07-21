@@ -18,6 +18,7 @@
 #import "ListItemsDataModel.h"
 #import "ListDetailModel.h"
 #import "FGDetailViewViewController.h"
+#import "MoreCollectionViewController.h"
 
 
 #define VIEWW [UIScreen mainScreen].bounds.size.width
@@ -80,7 +81,7 @@ static NSString * headerIdentifier2 = @"header2";
     }else if ([listItemsDataModel.layout_type isEqualToString:@"nav-single"]){
         itemSize = CGSizeMake((VIEWW -60)/5, 80);
     }else
-        itemSize = CGSizeMake((VIEWW -40)/3, 150);
+        itemSize = CGSizeMake((VIEWW -40)/3, 130);
     return itemSize;
     
 }
@@ -137,9 +138,43 @@ static NSString * headerIdentifier2 = @"header2";
         sectionHeaderViewScroll.modelArr = listItemsDataModel.list;
         return sectionHeaderViewScroll;
     }else{
+        __weak VideoCollectionViewController *weakRecommendVC = self;
         FGCollectionReusableView *sectionHeaderView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:headerIdentifier forIndexPath:indexPath];
+        ListItemsDataModel *listItemsDataModel = _recommendModel.data[indexPath.section];
+        sectionHeaderView.listItemsDataModel = listItemsDataModel;
+        
+        sectionHeaderView.moreBtnClick = ^{
+            //取出选中section的Model
+            ListItemsDataModel *listItemsDataModel = _recommendModel.data[indexPath.section];
+            //传递属性
+            MoreCollectionViewController *moreVC = [[MoreCollectionViewController alloc] initWithCollectionViewLayout:[weakRecommendVC addFlowlaout]];
+            moreVC.listItemsDataModel = listItemsDataModel;
+            [moreVC.collectionView setBackgroundColor:[UIColor whiteColor]];
+            //navigationController push控制器
+            [weakRecommendVC.navigationController pushViewController:moreVC animated:YES];
+        };
+
         return sectionHeaderView;
     }
+}
+
+//flowLayout
+- ( UICollectionViewFlowLayout *)addFlowlaout{
+    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc]init];
+    flowLayout.minimumLineSpacing = 10.0;//行间距
+    flowLayout.minimumInteritemSpacing = 0.0;//itme间距
+    //section的头尾size,scrollDirection为垂直,Size中的高度起作用;scrollDirection为水平,Size中的宽度起作用
+    //    flowLayout.headerReferenceSize = CGSizeMake(30, 30);
+    //    flowLayout.footerReferenceSize = CGSizeMake(30, 30);
+    flowLayout.sectionInset = UIEdgeInsetsMake(0, 10, 0, 10);//sectionInset边距
+    //设置section头视图悬浮
+    flowLayout.sectionHeadersPinToVisibleBounds = NO;
+    //    flowLayout.estimatedItemSize = CGSizeMake(50, 100);
+    //    _videoCollerctionViewControllerVR = [[VideoCollectionViewController alloc] initWithCollectionViewLayout:flowLayout];
+    //    [self addChildViewController:_videoCollerctionViewControllerVR];
+    //    self.view =_videoCollerctionViewControllerVR.collectionView;
+    //    _videoCollerctionViewControllerVR.view.frame = CGRectMake(0, 65, VIEWW, VIEWH);
+    return flowLayout;
 }
 
 #pragma mark 数据请求

@@ -13,7 +13,6 @@
 		CC355FC21D2FC4DD007ACF6E /* FGRecommendCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC355FC11D2FC4DD007ACF6E /* FGRecommendCollectionViewController.m */; };
 		CC355FC91D2FC9D1007ACF6E /* FGCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC355FC71D2FC9D1007ACF6E /* FGCollectionViewCell.m */; };
 		CC355FCA1D2FC9D1007ACF6E /* FGCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC355FC81D2FC9D1007ACF6E /* FGCollectionViewCell.xib */; };
-
 		CC3AE02A1D371D19009BE50B /* TitleCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3AE0261D371D19009BE50B /* TitleCollectionView.m */; };
 		CC3AE02B1D371D19009BE50B /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3AE0281D371D19009BE50B /* CollectionViewCell.m */; };
 		CC3AE02C1D371D19009BE50B /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC3AE0291D371D19009BE50B /* CollectionViewCell.xib */; };
@@ -26,7 +25,6 @@
 		CC3FBF501D3CF88900E34402 /* VAttrsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3FBF4F1D3CF88900E34402 /* VAttrsModel.m */; };
 		CC3FBF561D3CFCA300E34402 /* LandScapeUrlModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3FBF551D3CFCA300E34402 /* LandScapeUrlModel.m */; };
 		CC3FBF5D1D3D000400E34402 /* PlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3FBF5B1D3D000400E34402 /* PlayViewController.m */; };
-		CCA068E41D35D61D00CC448F /* VideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA068E31D35D61D00CC448F /* VideoModel.m */; };
 		CCA068E81D3625D900CC448F /* FGDetailViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA068E61D3625D900CC448F /* FGDetailViewViewController.m */; };
 		CCA068E91D3625D900CC448F /* FGDetailViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCA068E71D3625D900CC448F /* FGDetailViewViewController.xib */; };
 		CCA068F11D390ED600CC448F /* RecommendModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA068F01D390ED600CC448F /* RecommendModel.m */; };
@@ -37,11 +35,11 @@
 		CCA069101D3CF68200CC448F /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA0690F1D3CF68200CC448F /* VideoViewController.m */; };
 		CCA0691E1D3CFAA900CC448F /* VideoCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA0691D1D3CFAA900CC448F /* VideoCollectionViewController.m */; };
 		CCA069211D3F1B0300CC448F /* MoreCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA069201D3F1B0300CC448F /* MoreCollectionViewController.m */; };
+		CCA069221D3FAD9600CC448F /* FGCollectionReusableView2.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA4EEDE1D338D8400978705 /* FGCollectionReusableView2.m */; };
 		CCA4EED61D332BCC00978705 /* FGCollectionViewCell3.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA4EED41D332BCC00978705 /* FGCollectionViewCell3.m */; };
 		CCA4EED71D332BCC00978705 /* FGCollectionViewCell3.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCA4EED51D332BCC00978705 /* FGCollectionViewCell3.xib */; };
 		CCA4EEDB1D33898900978705 /* FGCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA4EED91D33898900978705 /* FGCollectionReusableView.m */; };
 		CCA4EEDC1D33898900978705 /* FGCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCA4EEDA1D33898900978705 /* FGCollectionReusableView.xib */; };
-		CCA4EEE01D338D8400978705 /* FGCollectionReusableView2.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA4EEDE1D338D8400978705 /* FGCollectionReusableView2.m */; };
 		CCA4EEE11D338D8400978705 /* FGCollectionReusableView2.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCA4EEDF1D338D8400978705 /* FGCollectionReusableView2.xib */; };
 		CCA4EEE31D33C0C500978705 /* cell in Resources */ = {isa = PBXBuildFile; fileRef = CCA4EEE21D33C0C500978705 /* cell */; };
 		CCA4EEEC1D35093E00978705 /* social-placeholder@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCA4EEEB1D35093E00978705 /* social-placeholder@3x.png */; };
@@ -89,7 +87,6 @@
 		CC355FC61D2FC9D1007ACF6E /* FGCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGCollectionViewCell.h; sourceTree = "<group>"; };
 		CC355FC71D2FC9D1007ACF6E /* FGCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGCollectionViewCell.m; sourceTree = "<group>"; };
 		CC355FC81D2FC9D1007ACF6E /* FGCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FGCollectionViewCell.xib; sourceTree = "<group>"; };
-
 		CC3AE0251D371D19009BE50B /* TitleCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleCollectionView.h; sourceTree = "<group>"; };
 		CC3AE0261D371D19009BE50B /* TitleCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleCollectionView.m; sourceTree = "<group>"; };
 		CC3AE0271D371D19009BE50B /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
@@ -109,9 +106,6 @@
 		CC3FBF551D3CFCA300E34402 /* LandScapeUrlModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandScapeUrlModel.m; sourceTree = "<group>"; };
 		CC3FBF5A1D3D000400E34402 /* PlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayViewController.h; sourceTree = "<group>"; };
 		CC3FBF5B1D3D000400E34402 /* PlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayViewController.m; sourceTree = "<group>"; };
-		CCA068E21D35D61D00CC448F /* VideoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoModel.h; sourceTree = "<group>"; };
-		CCA068E31D35D61D00CC448F /* VideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoModel.m; sourceTree = "<group>"; };
-
 		CCA068E51D3625D900CC448F /* FGDetailViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGDetailViewViewController.h; sourceTree = "<group>"; };
 		CCA068E61D3625D900CC448F /* FGDetailViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGDetailViewViewController.m; sourceTree = "<group>"; };
 		CCA068E71D3625D900CC448F /* FGDetailViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FGDetailViewViewController.xib; sourceTree = "<group>"; };
@@ -326,12 +320,8 @@
 				CCE692FC1D25FCEF00AE5171 /* Recommend */,
 				CCE693031D26006E00AE5171 /* Channel */,
 				CCE693041D26009400AE5171 /* Local */,
-
-				CCE693001D25FD3A00AE5171 /* MainTabBarVC.h */,
-				CCE693011D25FD3A00AE5171 /* MainTabBarVC.m */,
 				CC3FBF5A1D3D000400E34402 /* PlayViewController.h */,
 				CC3FBF5B1D3D000400E34402 /* PlayViewController.m */,
-
 			);
 			name = C;
 			sourceTree = "<group>";
@@ -351,20 +341,7 @@
 		CCE692FB1D25F87B00AE5171 /* M */ = {
 			isa = PBXGroup;
 			children = (
-
 				CCA068EE1D390E4900CC448F /* New Group1 */,
-
-				CCF8A3481D2D262700255967 /* RecommenModel.h */,
-				CCF8A3491D2D262700255967 /* RecommenModel.m */,
-				CCF8A34B1D2D29B600255967 /* RecommenModel2.h */,
-				CCF8A34C1D2D29B600255967 /* RecommenModel2.m */,
-				CCF8A34E1D2D317B00255967 /* RecommenModel3.h */,
-				CCF8A34F1D2D317B00255967 /* RecommenModel3.m */,
-				CCA068E21D35D61D00CC448F /* VideoModel.h */,
-				CCA068E31D35D61D00CC448F /* VideoModel.m */,
-				CCF8A3511D2D33C400255967 /* Key.h */,
-				CCA4EEE61D33CD1900978705 /* FGUrlDate.h */,
-				CCA4EEE71D33CD1900978705 /* FGUrlDate.m */,
 				CC3FBF4B1D3CF19400E34402 /* VModelFirst.h */,
 				CC3FBF4C1D3CF19400E34402 /* VModelFirst.m */,
 				CC3FBF481D3CF18000E34402 /* VDataModel.h */,
@@ -373,7 +350,6 @@
 				CC3FBF4F1D3CF88900E34402 /* VAttrsModel.m */,
 				CC3FBF541D3CFCA300E34402 /* LandScapeUrlModel.h */,
 				CC3FBF551D3CFCA300E34402 /* LandScapeUrlModel.m */,
-
 			);
 			name = M;
 			sourceTree = "<group>";
@@ -538,10 +514,7 @@
 				CC3AE0821D37BC84009BE50B /* quanjing.plist in Resources */,
 				CCF8A3921D2E7D9D00255967 /* Main2.storyboard in Resources */,
 				CCA4EEE11D338D8400978705 /* FGCollectionReusableView2.xib in Resources */,
-
 				CC3AE02C1D371D19009BE50B /* CollectionViewCell.xib in Resources */,
-				CCA4EED21D332ABD00978705 /* FGCollectionViewCell2.xib in Resources */,
-
 				CCA4EEDC1D33898900978705 /* FGCollectionReusableView.xib in Resources */,
 				CC3AE0801D37BC58009BE50B /* Main.plist in Resources */,
 				CC355FCA1D2FC9D1007ACF6E /* FGCollectionViewCell.xib in Resources */,
@@ -699,40 +672,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCA069221D3FAD9600CC448F /* FGCollectionReusableView2.m in Sources */,
 				CCA4EEDB1D33898900978705 /* FGCollectionReusableView.m in Sources */,
 				CCA068E81D3625D900CC448F /* FGDetailViewViewController.m in Sources */,
 				CCA4EED61D332BCC00978705 /* FGCollectionViewCell3.m in Sources */,
 				CC355FC91D2FC9D1007ACF6E /* FGCollectionViewCell.m in Sources */,
 				CC3FBF5D1D3D000400E34402 /* PlayViewController.m in Sources */,
 				CCE692CB1D25F77600AE5171 /* AppDelegate.m in Sources */,
-
 				CCA068FA1D3915EC00CC448F /* ListDetailModel.m in Sources */,
 				CCA069211D3F1B0300CC448F /* MoreCollectionViewController.m in Sources */,
 				CCA068F11D390ED600CC448F /* RecommendModel.m in Sources */,
 				CCA069101D3CF68200CC448F /* VideoViewController.m in Sources */,
 				CCA068FE1D3CB77A00CC448F /* FGCollectionViewCell2.m in Sources */,
-
 				CC3AE02B1D371D19009BE50B /* CollectionViewCell.m in Sources */,
 				CC3FBF561D3CFCA300E34402 /* LandScapeUrlModel.m in Sources */,
 				CC3AE02A1D371D19009BE50B /* TitleCollectionView.m in Sources */,
-				CCE693071D2600F100AE5171 /* LocalTableVC.m in Sources */,
 				CC3FBF4A1D3CF18000E34402 /* VDataModel.m in Sources */,
-
 				CCE692C81D25F77600AE5171 /* main.m in Sources */,
 				CC355FC21D2FC4DD007ACF6E /* FGRecommendCollectionViewController.m in Sources */,
-
 				CCA068F71D39122000CC448F /* ListItemsDataModel.m in Sources */,
-				CCA4EEE01D338D8400978705 /* FGCollectionReusableView2.m in Sources */,
 				CCA0691E1D3CFAA900CC448F /* VideoCollectionViewController.m in Sources */,
-
-				CCF8A34D1D2D29B600255967 /* RecommenModel2.m in Sources */,
 				CC3FBF501D3CF88900E34402 /* VAttrsModel.m in Sources */,
-				CCA068E41D35D61D00CC448F /* VideoModel.m in Sources */,
-				CCA4EEE01D338D8400978705 /* FGCollectionReusableView2.m in Sources */,
 				CC0D64141D3D14C6003C02FA /* FmdbTool.m in Sources */,
-				CCA4EED11D332ABD00978705 /* FGCollectionViewCell2.m in Sources */,
 				CC3FBF4D1D3CF19400E34402 /* VModelFirst.m in Sources */,
-				CCE693021D25FD3A00AE5171 /* MainTabBarVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

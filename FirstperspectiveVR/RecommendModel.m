@@ -12,6 +12,7 @@
 
 - (instancetype)initWithDictionary:(NSDictionary *)dict{
     if (self = [super init]) {
+        _way = [dict[KWay] boolValue];
         _status = dict[KStatus];
         _status_msg = dict[KStatus_msg];
         _version = dict[KVersion];
@@ -19,6 +20,10 @@
         _date = dict[KDate];
         _language = dict[KLanguage];
         _data_type = dict[KData_type];
+        if (_way) {
+            ListItemsDataModel *listItemsDataModel = [ListItemsDataModel listItemsDataModelWithDictionary :dict[KData]];
+            _data = @[listItemsDataModel];
+        }else
         if ([dict[KData] isKindOfClass:[NSObject class]]) {
             NSArray *dataArr = dict[KData][KList];
             NSMutableArray *mArr = [NSMutableArray array];
@@ -31,6 +36,8 @@
     }
     return self;
 }
+
+
 
 + (instancetype)recommendModelWithDictionary:(NSDictionary *)dict{
     return [[self alloc] initWithDictionary:dict];

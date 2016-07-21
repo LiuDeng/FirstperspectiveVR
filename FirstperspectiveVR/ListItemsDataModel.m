@@ -20,14 +20,13 @@
         _title = dict[KTitle];
 //        [self setValuesForKeysWithDictionary:dict];
         //解析List数组数据
-        if ([dict[KList] isKindOfClass:[NSArray class]]) {
             NSMutableArray *mArr = [NSMutableArray array];
             for (NSDictionary *dict1 in dict[KList]) {
                 ListDetailModel *listDetailModel = [ListDetailModel listDetailModelWithDictionary:dict1];
                 [mArr addObject:listDetailModel];
             }
             _list = mArr;
-        }
+        
         _url = dict[KUrl];
     }
     return self;
