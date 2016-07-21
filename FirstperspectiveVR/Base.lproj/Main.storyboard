@@ -27,7 +27,7 @@
         <!--Item-->
         <scene sceneID="Fvq-Ol-GC8">
             <objects>
-                <viewController id="Cy5-wD-YVu" customClass="PlayViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PlayViewController" id="Cy5-wD-YVu" customClass="PlayViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CwT-RA-dIy"/>
                         <viewControllerLayoutGuide type="bottom" id="QbX-D0-aJa"/>
@@ -67,7 +67,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="简介：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uqA-vU-ola">
                                 <rect key="frame" x="10" y="325" width="51" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jmc-HH-FKk">
@@ -80,7 +80,7 @@
                                 <rect key="frame" x="0.0" y="210" width="240" height="24"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dDR-LQ-JGu" customClass="GVRVideoView">
@@ -119,6 +119,7 @@
                             <constraint firstItem="w8i-bW-3LX" firstAttribute="leading" secondItem="86M-TR-ZQp" secondAttribute="leading" id="7rB-di-t3x"/>
                             <constraint firstItem="dDR-LQ-JGu" firstAttribute="leading" secondItem="fCJ-8B-lxG" secondAttribute="leading" id="9HR-ui-1By"/>
                             <constraint firstAttribute="trailing" secondItem="dDR-LQ-JGu" secondAttribute="trailing" id="AZb-VQ-dCd"/>
+                            <constraint firstItem="dDR-LQ-JGu" firstAttribute="top" secondItem="CwT-RA-dIy" secondAttribute="bottom" id="Emq-0F-dPs"/>
                             <constraint firstItem="86M-TR-ZQp" firstAttribute="top" secondItem="dDR-LQ-JGu" secondAttribute="bottom" constant="10" id="FSz-bs-RyT"/>
                             <constraint firstItem="jnI-Eo-RlA" firstAttribute="top" secondItem="fCJ-8B-lxG" secondAttribute="top" id="Gxk-rx-NBj"/>
                             <constraint firstItem="Cau-qc-aVX" firstAttribute="centerY" secondItem="elM-hP-7kw" secondAttribute="centerY" id="Jfm-mk-H3D"/>
@@ -146,14 +147,12 @@
                             <constraint firstItem="w8i-bW-3LX" firstAttribute="leading" secondItem="86M-TR-ZQp" secondAttribute="trailing" constant="10" id="iKg-ce-BML"/>
                             <constraint firstItem="elM-hP-7kw" firstAttribute="top" secondItem="bi9-Ni-Bg0" secondAttribute="top" id="mVk-qq-wfo"/>
                             <constraint firstItem="86M-TR-ZQp" firstAttribute="leading" secondItem="dDR-LQ-JGu" secondAttribute="leading" id="nJQ-SZ-Tuj"/>
-                            <constraint firstItem="dDR-LQ-JGu" firstAttribute="top" secondItem="CwT-RA-dIy" secondAttribute="bottom" id="qgM-u3-hgP"/>
                             <constraint firstItem="dDR-LQ-JGu" firstAttribute="centerY" secondItem="fCJ-8B-lxG" secondAttribute="centerY" id="soN-T5-YnC"/>
                             <constraint firstItem="dDR-LQ-JGu" firstAttribute="height" secondItem="fCJ-8B-lxG" secondAttribute="height" multiplier="1/3" id="xyU-B9-p2r"/>
                             <constraint firstItem="86M-TR-ZQp" firstAttribute="leading" secondItem="fCJ-8B-lxG" secondAttribute="leadingMargin" constant="10" id="zVx-Op-IVJ"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="qgM-u3-hgP"/>
                                 <exclude reference="soN-T5-YnC"/>
                                 <exclude reference="FSz-bs-RyT"/>
                                 <exclude reference="zVx-Op-IVJ"/>
