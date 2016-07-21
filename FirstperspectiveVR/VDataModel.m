@@ -8,6 +8,7 @@
 
 #import "VDataModel.h"
 #import "LandScapeUrlModel.h"
+//#import "VAttrsModel.h"
 //@property(nonatomic,strong)NSString* payment_count;
 //@property(nonatomic,strong)NSString* operation_type;
 //@property(nonatomic,strong)NSString* source;

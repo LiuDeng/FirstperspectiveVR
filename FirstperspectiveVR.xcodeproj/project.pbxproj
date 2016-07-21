@@ -25,6 +25,7 @@
 		CC3FBF501D3CF88900E34402 /* VAttrsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3FBF4F1D3CF88900E34402 /* VAttrsModel.m */; };
 		CC3FBF561D3CFCA300E34402 /* LandScapeUrlModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3FBF551D3CFCA300E34402 /* LandScapeUrlModel.m */; };
 		CC3FBF5D1D3D000400E34402 /* PlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3FBF5B1D3D000400E34402 /* PlayViewController.m */; };
+		CC6E77C51D40F4F200EB0676 /* PlayViewC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC6E77C41D40F4F200EB0676 /* PlayViewC.xib */; };
 		CCA068E41D35D61D00CC448F /* VideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA068E31D35D61D00CC448F /* VideoModel.m */; };
 		CCA068E81D3625D900CC448F /* FGDetailViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA068E61D3625D900CC448F /* FGDetailViewViewController.m */; };
 		CCA068E91D3625D900CC448F /* FGDetailViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCA068E71D3625D900CC448F /* FGDetailViewViewController.xib */; };
@@ -107,6 +108,7 @@
 		CC3FBF551D3CFCA300E34402 /* LandScapeUrlModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandScapeUrlModel.m; sourceTree = "<group>"; };
 		CC3FBF5A1D3D000400E34402 /* PlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayViewController.h; sourceTree = "<group>"; };
 		CC3FBF5B1D3D000400E34402 /* PlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayViewController.m; sourceTree = "<group>"; };
+		CC6E77C41D40F4F200EB0676 /* PlayViewC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayViewC.xib; sourceTree = "<group>"; };
 		CCA068E21D35D61D00CC448F /* VideoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoModel.h; sourceTree = "<group>"; };
 		CCA068E31D35D61D00CC448F /* VideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoModel.m; sourceTree = "<group>"; };
 		CCA068E51D3625D900CC448F /* FGDetailViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGDetailViewViewController.h; sourceTree = "<group>"; };
@@ -316,6 +318,7 @@
 				CCE693011D25FD3A00AE5171 /* MainTabBarVC.m */,
 				CC3FBF5A1D3D000400E34402 /* PlayViewController.h */,
 				CC3FBF5B1D3D000400E34402 /* PlayViewController.m */,
+				CC6E77C41D40F4F200EB0676 /* PlayViewC.xib */,
 			);
 			name = C;
 			sourceTree = "<group>";
@@ -509,6 +512,7 @@
 				CCA4EED71D332BCC00978705 /* FGCollectionViewCell3.xib in Resources */,
 				CCE692D61D25F77600AE5171 /* LaunchScreen.storyboard in Resources */,
 				CC3AE0821D37BC84009BE50B /* quanjing.plist in Resources */,
+				CC6E77C51D40F4F200EB0676 /* PlayViewC.xib in Resources */,
 				CCF8A3921D2E7D9D00255967 /* Main2.storyboard in Resources */,
 				CCA4EEE11D338D8400978705 /* FGCollectionReusableView2.xib in Resources */,
 				CC3AE02C1D371D19009BE50B /* CollectionViewCell.xib in Resources */,
