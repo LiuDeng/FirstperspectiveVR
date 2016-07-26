@@ -7,7 +7,7 @@
 //
 
 #import "FGCollectionViewCell2.h"
-#import "RecommenModel2.h"
+#import "ListDetailModel.h"
 #import "UIImageView+WebCache.h"
 
 @interface FGCollectionViewCell2 ()
@@ -18,11 +18,11 @@
 
 @implementation FGCollectionViewCell2
 
-- (void)setRecommenModel2:(RecommenModel2 *)recommenModel2{
-    _recommenModel2 = recommenModel2;
-    NSString *imageUrl = recommenModel2.res_thumb;
+- (void)setListDetailModel:(ListDetailModel *)listDetailModel{
+    _listDetailModel = listDetailModel;
+    NSString *imageUrl = listDetailModel.pic_url;
     [_imageView sd_setImageWithURL:[NSURL URLWithString:imageUrl] placeholderImage:[UIImage imageNamed:@"social-user"]];
-    _titleLabel.text = recommenModel2.res_title;
+    _titleLabel.text = listDetailModel.title;
 }
 
 - (void)awakeFromNib {

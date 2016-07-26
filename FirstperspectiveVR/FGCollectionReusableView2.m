@@ -7,7 +7,7 @@
 //
 
 #import "FGCollectionReusableView2.h"
-#import "RecommenModel.h"
+#import "ListDetailModel.h"
 #import "UIImageView+WebCache.h"
 #import "Masonry.h"
 
@@ -25,15 +25,15 @@
 
 
 
-- (void)setRecommenModel:(RecommenModel *)recommenModel{
-    _recommenModel = recommenModel;
-    _titleLabel.text = recommenModel.banner_title;
-    _subtitleLabel.text = recommenModel.banner_subtitle;
+- (void)setListDetailModel:(ListDetailModel *)listDetailModel{
+    _listDetailModel = listDetailModel;
+    _titleLabel.text = listDetailModel.title;
+    _subtitleLabel.text = listDetailModel.subtitle;
 }
 
 - (void)setModelArr:(NSArray *)modelArr{
     _modelArr = modelArr;
-    for (int i = 0 ; i < 6; i ++) {
+    for (int i = 0 ; i < modelArr.count-1 ; i ++) {
         UIImageView *imageView = [[UIImageView alloc] init];
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
         [_imageViewScrollView addSubview:imageView];
@@ -50,17 +50,17 @@
             make.top.mas_equalTo(0);
         }];
         [btn addTarget:self action:@selector(imageViewclickBtn) forControlEvents:UIControlEventTouchUpInside];
-        if ([modelArr[i] isKindOfClass:[RecommenModel class]]) {
-            _recommenModel = modelArr[i];
-        }
-        NSString *avatarImageUrl = _recommenModel.banner_pic_path;
+        
+        _listDetailModel = modelArr[i];
+        
+        NSString *avatarImageUrl = _listDetailModel.pic_url;
         
         [imageView sd_setImageWithURL:[NSURL URLWithString:avatarImageUrl] placeholderImage:[UIImage imageNamed:@"social-placeholder"]];
     }
     
 }
 
-//点击事件
+//轮播图点击事件
 - (void)imageViewclickBtn{
     
 }
@@ -72,13 +72,13 @@
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
     NSInteger i = 0;
-    if (IMAGEWIDTH+20>scrollView.contentOffset.x>0) {
+    if (IMAGEWIDTH+20>scrollView.contentOffset.x&&scrollView.contentOffset.x>0) {
         i = 1 ;
-        [self setRecommenModel:_modelArr[i]];
+        [self setListDetailModel:_modelArr[i]];
         return;
     }else
         i = scrollView.contentOffset.x/IMAGEWIDTH;
-    [self setRecommenModel:_modelArr[i]];
+    [self setListDetailModel:_modelArr[i]];
 }
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -86,7 +86,7 @@
     _imageViewScrollView.contentSize = CGSizeMake(IMAGEWIDTH*6, IMAGEHEIGHT);
     _imageViewScrollView.pagingEnabled = YES;
     _imageViewScrollView.delegate = self;
-    // Initialization code
+    
 }
 
 @end

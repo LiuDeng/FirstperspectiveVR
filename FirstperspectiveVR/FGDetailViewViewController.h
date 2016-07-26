@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface FGDetailViewViewController : UIViewController
-
+@property (nonatomic, strong) NSString *resId;
+@property (nonatomic, strong) NSString *typeId;
 @end

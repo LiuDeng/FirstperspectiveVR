@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "VideoModel.h"
+
 @interface FGUrlDate : NSObject
-@property (nonatomic, strong) VideoModel *videoModel;
+
 @property (nonatomic, strong) void(^reLoadDateOfView)();
 + (instancetype)FGUrlDateIsOneWithUrl :(NSString*)url;
 - (instancetype)initWithUrl : (NSString *)url;

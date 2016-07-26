@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@class RecommenModel;
+@class ListDetailModel;
 @interface FGCollectionReusableView2 : UICollectionReusableView
-@property (nonatomic, strong) RecommenModel *recommenModel;
+@property (nonatomic, strong) ListDetailModel *listDetailModel;
 @property (nonatomic, strong) NSArray *modelArr;
 @end
