@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "ListItemsDataModel.h"
 @interface MoreCollectionViewController : UICollectionViewController
-
+@property (nonatomic ) BOOL isHideen;
 @property (nonatomic, strong) ListItemsDataModel *listItemsDataModel;
 @end

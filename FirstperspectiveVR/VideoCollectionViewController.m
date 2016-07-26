@@ -19,6 +19,7 @@
 #import "ListDetailModel.h"
 #import "FGDetailViewViewController.h"
 #import "MoreCollectionViewController.h"
+#import "PlayViewController.h"
 
 
 #define VIEWW [UIScreen mainScreen].bounds.size.width
@@ -26,6 +27,7 @@
 @property (nonatomic, strong)AFHTTPSessionManager *sessionManager;
 @property (nonatomic, strong) NSArray *modelArr;
 @property (nonatomic, strong) RecommendModel *recommendModel;
+@property (nonatomic, strong) UIRefreshControl *refreshControl;
 @end
 
 @implementation VideoCollectionViewController
@@ -50,7 +52,10 @@ static NSString * headerIdentifier2 = @"header2";
     [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([FGCollectionViewCell3 class]) bundle:nil] forCellWithReuseIdentifier:reuseIdentifier3];
     [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([FGCollectionReusableView class]) bundle:nil] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:headerIdentifier];
     [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([FGCollectionReusableView2 class]) bundle:nil] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:headerIdentifier2];
-    
+    //下拉刷新
+    self.refreshControl = [[UIRefreshControl alloc] init];
+    [self.refreshControl addTarget:self action:@selector(refreshView) forControlEvents:UIControlEventValueChanged];
+    [self.collectionView addSubview:self.refreshControl];
 }
 
 
@@ -217,11 +222,25 @@ static NSString * headerIdentifier2 = @"header2";
 }
 
 
+#pragma mark 下拉刷新
+- (void)refreshView{
+    NSString *urlStr = @"http://res.static.mojing.cn/160630-1-1-1/ios/zh/1/page/443512.js";
+    [self getDateWithUrl:urlStr];
+     [self.refreshControl performSelector:@selector(endRefreshing) withObject:nil afterDelay:1];
+}
 #pragma mark <UICollectionViewDelegate>//itmes  点击跳转
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    
-    
+    ListItemsDataModel *listItemsDataModel = _recommendModel.data[indexPath.section+1];
+    ListDetailModel *listDetailModel = listItemsDataModel.list[indexPath.row];
+    if ([listDetailModel.type integerValue]== 4) {
+        UIStoryboard *sb2 = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+        PlayViewController *playViewController = [sb2 instantiateViewControllerWithIdentifier:@"PlayViewController"];
+        
+        NSString *urlStr = [NSString stringWithFormat:@"http://res.static.mojing.cn/160630-1-1-1/ios/zh/%@",listDetailModel.url];
+        playViewController.Url = urlStr;
+        [self.navigationController pushViewController:playViewController animated:YES];
+    }
     
 }
 

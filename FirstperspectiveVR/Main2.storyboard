@@ -45,7 +45,7 @@
         <!--Video View Controller-->
         <scene sceneID="8KX-4l-O65">
             <objects>
-                <viewController id="ic3-ct-Ad8" customClass="VideoViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VideoViewController" id="ic3-ct-Ad8" customClass="VideoViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yrc-VY-IhA"/>
                         <viewControllerLayoutGuide type="bottom" id="88Q-IQ-qAE"/>

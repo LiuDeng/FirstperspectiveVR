@@ -25,10 +25,6 @@
 		CC3FBF501D3CF88900E34402 /* VAttrsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3FBF4F1D3CF88900E34402 /* VAttrsModel.m */; };
 		CC3FBF561D3CFCA300E34402 /* LandScapeUrlModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3FBF551D3CFCA300E34402 /* LandScapeUrlModel.m */; };
 		CC3FBF5D1D3D000400E34402 /* PlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3FBF5B1D3D000400E34402 /* PlayViewController.m */; };
-
-		CC6E77C51D40F4F200EB0676 /* PlayViewC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC6E77C41D40F4F200EB0676 /* PlayViewC.xib */; };
-		CCA068E41D35D61D00CC448F /* VideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA068E31D35D61D00CC448F /* VideoModel.m */; };
-
 		CCA068E81D3625D900CC448F /* FGDetailViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA068E61D3625D900CC448F /* FGDetailViewViewController.m */; };
 		CCA068E91D3625D900CC448F /* FGDetailViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCA068E71D3625D900CC448F /* FGDetailViewViewController.xib */; };
 		CCA068F11D390ED600CC448F /* RecommendModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA068F01D390ED600CC448F /* RecommendModel.m */; };
@@ -40,6 +36,8 @@
 		CCA0691E1D3CFAA900CC448F /* VideoCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA0691D1D3CFAA900CC448F /* VideoCollectionViewController.m */; };
 		CCA069211D3F1B0300CC448F /* MoreCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA069201D3F1B0300CC448F /* MoreCollectionViewController.m */; };
 		CCA069221D3FAD9600CC448F /* FGCollectionReusableView2.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA4EEDE1D338D8400978705 /* FGCollectionReusableView2.m */; };
+		CCA069261D41FF7900CC448F /* FGCollectionReusableView3.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA069241D41FF7900CC448F /* FGCollectionReusableView3.m */; };
+		CCA069271D41FF7900CC448F /* FGCollectionReusableView3.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCA069251D41FF7900CC448F /* FGCollectionReusableView3.xib */; };
 		CCA4EED61D332BCC00978705 /* FGCollectionViewCell3.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA4EED41D332BCC00978705 /* FGCollectionViewCell3.m */; };
 		CCA4EED71D332BCC00978705 /* FGCollectionViewCell3.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCA4EED51D332BCC00978705 /* FGCollectionViewCell3.xib */; };
 		CCA4EEDB1D33898900978705 /* FGCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA4EED91D33898900978705 /* FGCollectionReusableView.m */; };
@@ -110,11 +108,6 @@
 		CC3FBF551D3CFCA300E34402 /* LandScapeUrlModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandScapeUrlModel.m; sourceTree = "<group>"; };
 		CC3FBF5A1D3D000400E34402 /* PlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayViewController.h; sourceTree = "<group>"; };
 		CC3FBF5B1D3D000400E34402 /* PlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayViewController.m; sourceTree = "<group>"; };
-
-		CC6E77C41D40F4F200EB0676 /* PlayViewC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayViewC.xib; sourceTree = "<group>"; };
-		CCA068E21D35D61D00CC448F /* VideoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoModel.h; sourceTree = "<group>"; };
-		CCA068E31D35D61D00CC448F /* VideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoModel.m; sourceTree = "<group>"; };
-
 		CCA068E51D3625D900CC448F /* FGDetailViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGDetailViewViewController.h; sourceTree = "<group>"; };
 		CCA068E61D3625D900CC448F /* FGDetailViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGDetailViewViewController.m; sourceTree = "<group>"; };
 		CCA068E71D3625D900CC448F /* FGDetailViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FGDetailViewViewController.xib; sourceTree = "<group>"; };
@@ -134,6 +127,9 @@
 		CCA0691D1D3CFAA900CC448F /* VideoCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoCollectionViewController.m; sourceTree = "<group>"; };
 		CCA0691F1D3F1B0300CC448F /* MoreCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreCollectionViewController.h; sourceTree = "<group>"; };
 		CCA069201D3F1B0300CC448F /* MoreCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreCollectionViewController.m; sourceTree = "<group>"; };
+		CCA069231D41FF7900CC448F /* FGCollectionReusableView3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGCollectionReusableView3.h; sourceTree = "<group>"; };
+		CCA069241D41FF7900CC448F /* FGCollectionReusableView3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGCollectionReusableView3.m; sourceTree = "<group>"; };
+		CCA069251D41FF7900CC448F /* FGCollectionReusableView3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FGCollectionReusableView3.xib; sourceTree = "<group>"; };
 		CCA4EED31D332BCC00978705 /* FGCollectionViewCell3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGCollectionViewCell3.h; sourceTree = "<group>"; };
 		CCA4EED41D332BCC00978705 /* FGCollectionViewCell3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGCollectionViewCell3.m; sourceTree = "<group>"; };
 		CCA4EED51D332BCC00978705 /* FGCollectionViewCell3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FGCollectionViewCell3.xib; sourceTree = "<group>"; };
@@ -236,6 +232,9 @@
 				CCA4EEDD1D338D8400978705 /* FGCollectionReusableView2.h */,
 				CCA4EEDE1D338D8400978705 /* FGCollectionReusableView2.m */,
 				CCA4EEDF1D338D8400978705 /* FGCollectionReusableView2.xib */,
+				CCA069231D41FF7900CC448F /* FGCollectionReusableView3.h */,
+				CCA069241D41FF7900CC448F /* FGCollectionReusableView3.m */,
+				CCA069251D41FF7900CC448F /* FGCollectionReusableView3.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -331,7 +330,6 @@
 				CCE693041D26009400AE5171 /* Local */,
 				CC3FBF5A1D3D000400E34402 /* PlayViewController.h */,
 				CC3FBF5B1D3D000400E34402 /* PlayViewController.m */,
-				CC6E77C41D40F4F200EB0676 /* PlayViewC.xib */,
 			);
 			name = C;
 			sourceTree = "<group>";
@@ -518,11 +516,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCA069271D41FF7900CC448F /* FGCollectionReusableView3.xib in Resources */,
 				CCA4EEE31D33C0C500978705 /* cell in Resources */,
 				CCA4EED71D332BCC00978705 /* FGCollectionViewCell3.xib in Resources */,
 				CCE692D61D25F77600AE5171 /* LaunchScreen.storyboard in Resources */,
 				CC3AE0821D37BC84009BE50B /* quanjing.plist in Resources */,
-				CC6E77C51D40F4F200EB0676 /* PlayViewC.xib in Resources */,
 				CCF8A3921D2E7D9D00255967 /* Main2.storyboard in Resources */,
 				CCA4EEE11D338D8400978705 /* FGCollectionReusableView2.xib in Resources */,
 				CC3AE02C1D371D19009BE50B /* CollectionViewCell.xib in Resources */,
@@ -699,6 +697,7 @@
 				CC3FBF561D3CFCA300E34402 /* LandScapeUrlModel.m in Sources */,
 				CC3AE02A1D371D19009BE50B /* TitleCollectionView.m in Sources */,
 				CC3FBF4A1D3CF18000E34402 /* VDataModel.m in Sources */,
+				CCA069261D41FF7900CC448F /* FGCollectionReusableView3.m in Sources */,
 				CCE692C81D25F77600AE5171 /* main.m in Sources */,
 				CC355FC21D2FC4DD007ACF6E /* FGRecommendCollectionViewController.m in Sources */,
 				CCA068F71D39122000CC448F /* ListItemsDataModel.m in Sources */,

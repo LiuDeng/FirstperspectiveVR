@@ -21,6 +21,7 @@
 #import "FGDetailViewViewController.h"
 #import "MoreCollectionViewController.h"
 #import "PlayViewController.h"
+#import "VideoViewController.h"
 
 #define VIEWW [UIScreen mainScreen].bounds.size.width
 
@@ -30,6 +31,7 @@
 @property (nonatomic, strong) NSArray *modelArr;
 @property (nonatomic, strong) RecommendModel *recommendModel;
 @property (nonatomic, strong) FGUrlDate *fgUrlDate;
+@property (nonatomic, strong) UIRefreshControl *refreshControl;
 
 
 @end
@@ -63,6 +65,11 @@ static NSString * headerIdentifier2 = @"header2";
     [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([FGCollectionViewCell3 class]) bundle:nil] forCellWithReuseIdentifier:reuseIdentifier3];
     [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([FGCollectionReusableView class]) bundle:nil] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:headerIdentifier];
     [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([FGCollectionReusableView2 class]) bundle:nil] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:headerIdentifier2];
+    //下拉刷新
+    self.refreshControl = [[UIRefreshControl alloc] init];
+    [self.refreshControl addTarget:self action:@selector(refreshView) forControlEvents:UIControlEventValueChanged];
+     [self.collectionView addSubview:self.refreshControl];
+    
     
 }
 
@@ -259,16 +266,40 @@ static NSString * headerIdentifier2 = @"header2";
     
 }
 
+#pragma mark 下拉刷新
+- (void)refreshView{
+    
+    NSString *urlStr = @"http://res.static.mojing.cn/160630-1-1-1/ios/zh/1/page/443512.js";
+    
+    [self getDateWithUrl:urlStr];
+    [self.refreshControl performSelector:@selector(endRefreshing) withObject:nil afterDelay:1];
+    
+}
+
 #pragma mark <UICollectionViewDelegate>//itmes  点击跳转
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-//    UIStoryboard *sb2 = [UIStoryboard storyboardWithName:<#(nonnull NSString *)#> bundle:<#(nullable NSBundle *)#>];
-    PlayViewController *playViewController = [[PlayViewController alloc] init];
     ListItemsDataModel *listItemsDataModel = _recommendModel.data[indexPath.section+1];
     ListDetailModel *listDetailModel = listItemsDataModel.list[indexPath.row];
-    NSString *urlStr = [NSString stringWithFormat:@"http://res.static.mojing.cn/160630-1-1-1/ios/zh/%@",listDetailModel.url];
-    playViewController.Url = urlStr;
-    [self.navigationController pushViewController:playViewController animated:YES];
+    if ([listDetailModel.type integerValue]== 4) {
+        UIStoryboard *sb2 = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+        PlayViewController *playViewController = [sb2 instantiateViewControllerWithIdentifier:@"PlayViewController"];
+        
+        NSString *urlStr = [NSString stringWithFormat:@"http://res.static.mojing.cn/160630-1-1-1/ios/zh/%@",listDetailModel.url];
+        playViewController.Url = urlStr;
+        [self.navigationController pushViewController:playViewController animated:YES];
+    }else if ([listDetailModel.type integerValue]== 9){
+//        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main2" bundle:[NSBundle mainBundle]];
+//        VideoViewController *VVC = [sb instantiateViewControllerWithIdentifier:@"VideoViewController"];
+        [self.tabBarController setSelectedIndex:1];
+//        [self presentViewController:VVC animated:YES completion:nil];
+    }else{
+        UIAlertAction *action = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:nil];
+        UIAlertController *alertContro = [UIAlertController alertControllerWithTitle:@"敬请期待" message:@"该资源尚未开放，请欣赏其他资源" preferredStyle:UIAlertControllerStyleAlert];
+        [alertContro addAction:action];
+        [self presentViewController:alertContro animated:YES completion:nil];
+    }
+    
    
 }
 
