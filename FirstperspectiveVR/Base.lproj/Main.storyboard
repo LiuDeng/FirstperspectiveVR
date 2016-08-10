@@ -99,10 +99,13 @@
                                 </connections>
                             </segmentedControl>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jnI-Eo-RlA">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
+                                <rect key="frame" x="0.0" y="50" width="600" height="200"/>
                             </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t0l-ca-qNf">
+                                <rect key="frame" x="338" y="343" width="193" height="2"/>
+                            </progressView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iko-JC-gHh">
-                                <rect key="frame" x="305" y="275" width="285" height="30"/>
+                                <rect key="frame" x="303" y="275" width="285" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="gpa-uu-3iE"/>
                                 </constraints>
@@ -122,7 +125,7 @@
                             <constraint firstAttribute="trailing" secondItem="dDR-LQ-JGu" secondAttribute="trailing" id="AZb-VQ-dCd"/>
                             <constraint firstItem="dDR-LQ-JGu" firstAttribute="top" secondItem="CwT-RA-dIy" secondAttribute="bottom" id="Emq-0F-dPs"/>
                             <constraint firstItem="86M-TR-ZQp" firstAttribute="top" secondItem="dDR-LQ-JGu" secondAttribute="bottom" constant="10" id="FSz-bs-RyT"/>
-                            <constraint firstItem="jnI-Eo-RlA" firstAttribute="top" secondItem="fCJ-8B-lxG" secondAttribute="top" id="Gxk-rx-NBj"/>
+                            <constraint firstItem="jnI-Eo-RlA" firstAttribute="top" secondItem="fCJ-8B-lxG" secondAttribute="top" constant="50" id="Gxk-rx-NBj"/>
                             <constraint firstItem="Cau-qc-aVX" firstAttribute="centerY" secondItem="elM-hP-7kw" secondAttribute="centerY" id="Jfm-mk-H3D"/>
                             <constraint firstItem="elM-hP-7kw" firstAttribute="centerY" secondItem="bi9-Ni-Bg0" secondAttribute="centerY" id="KBm-mU-exk"/>
                             <constraint firstItem="gtb-uT-KaJ" firstAttribute="top" secondItem="bi9-Ni-Bg0" secondAttribute="bottom" constant="10" id="KUa-ex-JFw"/>
@@ -140,12 +143,15 @@
                             <constraint firstItem="Cau-qc-aVX" firstAttribute="leading" secondItem="elM-hP-7kw" secondAttribute="trailing" constant="30" id="ZXT-kY-fEt"/>
                             <constraint firstItem="bi9-Ni-Bg0" firstAttribute="leading" secondItem="fCJ-8B-lxG" secondAttribute="leading" constant="10" id="aIC-5E-94s"/>
                             <constraint firstItem="jnI-Eo-RlA" firstAttribute="height" secondItem="fCJ-8B-lxG" secondAttribute="height" multiplier="1/3" id="amJ-Eb-74j"/>
-                            <constraint firstItem="dDR-LQ-JGu" firstAttribute="top" secondItem="fCJ-8B-lxG" secondAttribute="top" id="boa-Bg-fGJ"/>
+                            <constraint firstItem="dDR-LQ-JGu" firstAttribute="top" secondItem="fCJ-8B-lxG" secondAttribute="top" constant="50" id="boa-Bg-fGJ"/>
+                            <constraint firstItem="t0l-ca-qNf" firstAttribute="top" secondItem="iko-JC-gHh" secondAttribute="bottom" id="c53-ox-Uss"/>
+                            <constraint firstItem="t0l-ca-qNf" firstAttribute="width" secondItem="iko-JC-gHh" secondAttribute="width" id="cIm-ny-REn"/>
                             <constraint firstItem="86M-TR-ZQp" firstAttribute="top" secondItem="dDR-LQ-JGu" secondAttribute="bottom" constant="10" id="cyD-X4-2yV"/>
                             <constraint firstItem="w8i-bW-3LX" firstAttribute="centerY" secondItem="86M-TR-ZQp" secondAttribute="centerY" id="ddW-Ef-6vn"/>
                             <constraint firstItem="iko-JC-gHh" firstAttribute="width" secondItem="gtb-uT-KaJ" secondAttribute="width" id="fL8-kz-sUF"/>
                             <constraint firstItem="iko-JC-gHh" firstAttribute="centerY" secondItem="gtb-uT-KaJ" secondAttribute="centerY" id="gQC-Cw-kfY"/>
                             <constraint firstItem="w8i-bW-3LX" firstAttribute="leading" secondItem="86M-TR-ZQp" secondAttribute="trailing" constant="10" id="iKg-ce-BML"/>
+                            <constraint firstItem="t0l-ca-qNf" firstAttribute="leading" secondItem="iko-JC-gHh" secondAttribute="leading" id="ivQ-pb-2HD"/>
                             <constraint firstItem="elM-hP-7kw" firstAttribute="top" secondItem="bi9-Ni-Bg0" secondAttribute="top" id="mVk-qq-wfo"/>
                             <constraint firstItem="86M-TR-ZQp" firstAttribute="leading" secondItem="dDR-LQ-JGu" secondAttribute="leading" id="nJQ-SZ-Tuj"/>
                             <constraint firstItem="dDR-LQ-JGu" firstAttribute="centerY" secondItem="fCJ-8B-lxG" secondAttribute="centerY" id="soN-T5-YnC"/>
@@ -165,6 +171,8 @@
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="descLabel" destination="Jmc-HH-FKk" id="D2f-E0-0mG"/>
+                        <outlet property="downProgressView" destination="t0l-ca-qNf" id="WiD-Gl-CaQ"/>
+                        <outlet property="downloadButton" destination="iko-JC-gHh" id="H8h-I5-0CF"/>
                         <outlet property="playerView" destination="dDR-LQ-JGu" id="T2b-T4-94p"/>
                         <outlet property="scoreLabel" destination="w8i-bW-3LX" id="hgl-Lz-Qbd"/>
                         <outlet property="segmentedControl" destination="Cau-qc-aVX" id="TJk-wv-N3q"/>
@@ -175,7 +183,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XHC-1n-dAT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-565" y="2235"/>
+            <point key="canvasLocation" x="-509" y="2233"/>
         </scene>
         <!--Recommend Collection View Controller-->
         <scene sceneID="AKP-q4-XE7">

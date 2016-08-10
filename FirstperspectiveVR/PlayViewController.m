@@ -12,11 +12,14 @@
 #import "AFNetworking.h"
 #import "UIImageView+WebCache.h"
 #import "FmdbTool.h"
-
+#import "DownLoadList.h"
+#import "DownLoadTool.h"
 //#import "VAttrsModel.m"
 #import "VDataModel.h"
 
 @interface PlayViewController ()<GVRVideoViewDelegate>
+@property (weak, nonatomic) IBOutlet UIButton *downloadButton;
+@property (weak, nonatomic) IBOutlet UIProgressView *downProgressView;
 @property (weak, nonatomic) IBOutlet UIImageView *titleImage;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
@@ -27,10 +30,18 @@
 @property (nonatomic, strong)AFHTTPSessionManager* myManager;
 @property (nonatomic,strong) VModelFirst *model;
 @property (nonatomic, strong) NSString *currentPlayUrl;
+@property (nonatomic,strong)NSURLSessionDownloadTask* task;
+@property (nonatomic,strong)DownLoadList* downloadModel;
+@property (nonatomic,strong)DownLoadTool* downLoadTool;
+@property (nonatomic,strong)NSTimer* timer;
 @end
 
 @implementation PlayViewController
 BOOL _isPaused;
+-(DownLoadList *)downloadModel{
+    _downloadModel=[[DownLoadTool shareDownloadHandle] downLoadList:_currentPlayUrl];
+    return _downloadModel;
+}
 -(AFHTTPSessionManager *)myManager{
     if (!_myManager) {
         //创建manager对象
@@ -72,13 +83,7 @@ BOOL _isPaused;
             self.sizeLabel.text=model.size;
             _currentPlayUrl = model.play_url;
         });
-        
-
-        
-        
-        
-        
-        
+  
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"网络获取错误》》》》%@",error);
     }];
@@ -92,16 +97,68 @@ BOOL _isPaused;
     _playerView.delegate = self;
     _playerView.enableFullscreenButton = YES;
     _playerView.enableCardboardButton = YES;
-     _isPaused = NO;
     _model=[self model];
+    _downProgressView.hidden=YES;;
+        if (_downloadModel.iscomplete==YES) {
+            [_downloadButton setTitle:@"播放本地" forState:(UIControlStateNormal)];
+            _downProgressView.hidden=YES;
+        }
+//    if (_downloadModel.isdownloading==YES) {
+//        
+//    }
+    _timer=[NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(refresh) userInfo:nil repeats:YES];
+}
+-(void)refresh{
+    _downProgressView.progress=self.downloadModel.progress.fractionCompleted;
+    if (self.downloadModel.progress.fractionCompleted!=0) {
+        if (self.downloadModel.isdownloading==NO) {
+            [_downloadButton setTitle:@"继续" forState:(UIControlStateNormal)];
+        }else{
+            [_downloadButton setTitle:@"暂停" forState:(UIControlStateNormal)];
+            _downProgressView.progress=self.downloadModel.progress.fractionCompleted;
+            _downProgressView.hidden=NO;
+        }
+        
+    }
+    if (self.downloadModel.iscomplete==YES) {
+        [_downloadButton setTitle:@"播放本地" forState:(UIControlStateNormal)];
+        _downProgressView.hidden=YES;
+        [_timer invalidate];
+        _timer=nil;
+        
+    }
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)downloadBtn:(UIButton *)sender {
+    if ([sender.titleLabel.text isEqualToString:@"下载"]) {
+        [[DownLoadTool shareDownloadHandle]createDownloadWithUrl:_currentPlayUrl name:_model.data.title];
+        [sender setTitle:@"暂停" forState:(UIControlStateNormal)];
+        _downProgressView.hidden=NO;
+        _downProgressView.progress=self.downloadModel.progress.fractionCompleted;
+    }else if ([sender.titleLabel.text isEqualToString:@"暂停"]) {
+        _downloadModel=[[DownLoadTool shareDownloadHandle] pauseDownloadWithUrl:_currentPlayUrl];
+        [sender setTitle:@"继续" forState:(UIControlStateNormal)];
+        _downProgressView.hidden=YES;
+    }else if ([sender.titleLabel.text isEqualToString:@"继续"]) {
+        _downloadModel=[[DownLoadTool shareDownloadHandle] resumeDownloadWithUrl:_currentPlayUrl];
+        [sender setTitle:@"暂停" forState:(UIControlStateNormal)];
+        _downProgressView.hidden=NO;
+        _downProgressView.progress=self.downloadModel.progress.fractionCompleted;
+    }else if ([sender.titleLabel.text isEqualToString:@"播放本地"]) {
+        _downProgressView.hidden=YES;
+        [self.view bringSubviewToFront:_playerView];
+        [_playerView loadFromUrl:[NSURL URLWithString:[NSString stringWithFormat:@"/Users/qingyun/Desktop/%@.MP4",_model.data.title]]];
+    }
 }
+
+        
+
+
 - (IBAction)playBtn:(UIButton *)sender {
+    NSLog(@"!!!!!!!!!!!!!!!%@",_currentPlayUrl);
     [self.view bringSubviewToFront:_playerView];
 
     [_playerView loadFromUrl:[NSURL URLWithString:_currentPlayUrl]];
@@ -112,15 +169,6 @@ BOOL _isPaused;
     
     self.sizeLabel.text=model.size;
     _currentPlayUrl = model.play_url;
-
-//    [self.view ]
-    
-//    for (int  i=0; i<sender.numberOfSegments; i++) {
-//        VAttrsModel* model=_model.data.video_attrs[i];
-//        if (i == sender.selectedSegmentIndex) {
-//            NSLog(@"%@",model.definition_name);
-//        }
-//    }
     
     
     
@@ -152,7 +200,13 @@ didFailToLoadContent:(id)content
     }
     
 }
-
+-(void)dealloc{
+    [_playerView stop];
+    _playerView.delegate = nil;
+    
+    [_playerView removeFromSuperview];
+    _playerView=nil;
+}
 - (void)videoView:(GVRVideoView*)videoView didUpdatePosition:(NSTimeInterval)position {
     // Loop the video when it reaches the end.
 //    _slider.value = position;

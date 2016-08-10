@@ -53,6 +53,8 @@
 		CCE692E11D25F77600AE5171 /* FirstperspectiveVRTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE692E01D25F77600AE5171 /* FirstperspectiveVRTests.m */; };
 		CCE692EC1D25F77600AE5171 /* FirstperspectiveVRUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE692EB1D25F77600AE5171 /* FirstperspectiveVRUITests.m */; };
 		CCF8A3921D2E7D9D00255967 /* Main2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCF8A3911D2E7D9D00255967 /* Main2.storyboard */; };
+		CCFFAF7F1D59B991002774A0 /* DownLoadTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFFAF7E1D59B991002774A0 /* DownLoadTool.m */; };
+		CCFFAF821D59BAE9002774A0 /* DownLoadList.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFFAF811D59BAE9002774A0 /* DownLoadList.m */; };
 		ED47E5939287F40259172CE7 /* libPods-FirstperspectiveVRTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30FFC74399986E4753FB7B8E /* libPods-FirstperspectiveVRTests.a */; };
 /* End PBXBuildFile section */
 
@@ -156,6 +158,10 @@
 		CCE692EB1D25F77600AE5171 /* FirstperspectiveVRUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstperspectiveVRUITests.m; sourceTree = "<group>"; };
 		CCE692ED1D25F77600AE5171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCF8A3911D2E7D9D00255967 /* Main2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main2.storyboard; sourceTree = "<group>"; };
+		CCFFAF7D1D59B991002774A0 /* DownLoadTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownLoadTool.h; sourceTree = "<group>"; };
+		CCFFAF7E1D59B991002774A0 /* DownLoadTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownLoadTool.m; sourceTree = "<group>"; };
+		CCFFAF801D59BAE9002774A0 /* DownLoadList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownLoadList.h; sourceTree = "<group>"; };
+		CCFFAF811D59BAE9002774A0 /* DownLoadList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownLoadList.m; sourceTree = "<group>"; };
 		FD4F975CD5F07468F1734407 /* libPods-FirstperspectiveVR.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FirstperspectiveVR.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -278,6 +284,7 @@
 		CCE692C51D25F77600AE5171 /* FirstperspectiveVR */ = {
 			isa = PBXGroup;
 			children = (
+				CCFFAF791D59B914002774A0 /* DownLoad Tool */,
 				CC0D64111D3D14AD003C02FA /* FMDB */,
 				CC355FBF1D2F36DB007ACF6E /* Views */,
 				CCE692FB1D25F87B00AE5171 /* M */,
@@ -392,6 +399,17 @@
 				CCA069201D3F1B0300CC448F /* MoreCollectionViewController.m */,
 			);
 			name = Local;
+			sourceTree = "<group>";
+		};
+		CCFFAF791D59B914002774A0 /* DownLoad Tool */ = {
+			isa = PBXGroup;
+			children = (
+				CCFFAF7D1D59B991002774A0 /* DownLoadTool.h */,
+				CCFFAF7E1D59B991002774A0 /* DownLoadTool.m */,
+				CCFFAF801D59BAE9002774A0 /* DownLoadList.h */,
+				CCFFAF811D59BAE9002774A0 /* DownLoadList.m */,
+			);
+			name = "DownLoad Tool";
 			sourceTree = "<group>";
 		};
 		CE02D04DCC49DA99BFC0B034 /* Frameworks */ = {
@@ -702,7 +720,9 @@
 				CC355FC21D2FC4DD007ACF6E /* FGRecommendCollectionViewController.m in Sources */,
 				CCA068F71D39122000CC448F /* ListItemsDataModel.m in Sources */,
 				CCA0691E1D3CFAA900CC448F /* VideoCollectionViewController.m in Sources */,
+				CCFFAF821D59BAE9002774A0 /* DownLoadList.m in Sources */,
 				CC3FBF501D3CF88900E34402 /* VAttrsModel.m in Sources */,
+				CCFFAF7F1D59B991002774A0 /* DownLoadTool.m in Sources */,
 				CC0D64141D3D14C6003C02FA /* FmdbTool.m in Sources */,
 				CC3FBF4D1D3CF19400E34402 /* VModelFirst.m in Sources */,
 			);
